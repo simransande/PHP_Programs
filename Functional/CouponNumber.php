@@ -1,10 +1,6 @@
 <?php
-
 include "Utility.php";
-
-echo "Enter the number:\n";
-$number=Utility::inputInteger();
-
-$result=Utility::couponNumber($number);
-
+echo "Enter the number :";
+$n =  Utility::inputInteger();
+Utility::couponNumber($n);
 ?>

@@ -194,28 +194,29 @@ public static function Gambler($trails,$stake,$goal)
     }
 
 }
-    
-//coupon number generate
 
-public static function couponNumber($number)
-{
-    //boolean() $isCollected = new boolean($number);
-    $f=0;
-    $count=0;
-    while($f<$number)
+//coupon number
+
+public static function couponNumber($n)
     {
-        $random=(mt_rand(0,1)*$number);
-        $count++;
-        if ($random==1) {
-            $f++;
-        }else
-        {
-            echo $random;
+        $flag = false;
+        $distinct = array_fill(0,$n,0);
+        for ($i = 0; $i < $n; $i++) {
+             $random=mt_rand(10,99);
+            echo "$random\n";
+            for ($j = 0; $j < $n; $j++) {
+                if ($distinct[$j] == $random) {
+                    break;
+                }
+                if (!$flag) {
+                    $distinct[$i] = $random;
+                }
+            }
         }
-        return $count;
+       foreach ($distinct as $value) {
+           echo "\n$value";}
+       
     }
-   
-}
 
 // 2D Array
 
