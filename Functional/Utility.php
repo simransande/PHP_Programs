@@ -308,38 +308,31 @@ public static function distance($x,$y)
 
 //permutation
 
-     public static function permute($str,$l,$r) 
-     {
-		if ($l == $r) {				//left and right of string
-			echo $str;
-
-		} else {
-			for ($i = $l; $i <= $r; $i++)
-
-			{
-				$str = Utility::$swap($str, $l, $i);
-				Utility::$permute($str, $l + 1, $r);
-				$str =Utility:: $swap($str, $l, $i);
-			}
-		}
-	}
-	
-
-    public static function swap($a,  $i, $j) 
+public static function permute($str, $l, $r)
+{
+    if ($l == $r)
+        echo $str. "\n";
+    else
     {
-		$temp;
-		$str11 = "";
-		$charArray=[];
-		$temp = $charArray[$i];
-		$charArray[$i] = $charArray[$j];
-        $charArray[$j] = $temp;
-        $x=strlen($charArray);
-		for ($k = 0; $k < $x; $k++)
-		$str11 = $str11 + $charArray[$k];
-		return $str11;
-	}
+        for ($i = $l; $i <= $r; $i++)
+        {
+            $str = Utility::swap($str, $l, $i);
+            Utility::permute($str, $l + 1, $r);
+            $str = Utility::swap($str, $l, $i);
+        }
+    }
+}
+ 
 
-
+public static function swap($a, $i, $j)
+{
+    $temp;
+    $charArray = str_split($a);
+    $temp = $charArray[$i] ;
+    $charArray[$i] = $charArray[$j];
+    $charArray[$j] = $temp;
+    return implode($charArray);
+}
 
 
 //Quadratic
