@@ -158,11 +158,51 @@ public static function primeAnagramAndPalindrome($choice)
     }
 }
 
+//Find your number
+
+public static function magicNumber($num,$lower,$counter,$middle)
+{
+    $upper=$num;
+    echo "the range of number is between ".$lower . " and " .$upper."\n";
+    echo "the  imagined number may be " .$middle . "\n";
+    echo"Enter as High or Low or Yes \n";
+    $input = Utility::inputString();
+    while ($lower <= $upper)
+    {
+        if ($input=="high")
+        {
+            $lower = $middle;
+            $counter++;
+        }
+        else if ($input=="low")
+        {
+            $upper = $middle;
+            $counter++;
+        }
+        else if ($input=="yes")
+        {
+            $counter = $counter + 1;
+            echo "the imagined number is ".$middle ."\n";
+            break;
+        }
+        if ($counter < $num)
+        {
+            $middle = floor(($lower + $upper + 1) / 2);   //for flooring the number 1.5=1
+            echo "Is your number ".$middle .":";
+            $input =Utility::inputString();
+        }
+
+    }
+
+}
+
+
+
 //Binary search
 
-public static function binarySearch( $arr, $x)
+public static function binarySearch( $arr1, $x)
 {
-    $arr1=sort($arr);
+    //$arr1=sort($arr);
     if (count($arr1) === 0) 
     return false;
 
@@ -248,6 +288,114 @@ for ($j = 0; $j < count($arr) - 1; $j++) {
 }
 return $arr;
 }
+
+//vending machine
+
+
+    public static  function vendingmachine($money,$notes,$i)
+    {
+    
+        $total=0;
+      if($money==0)
+      {
+          return -1;
+      }
+      else
+      {
+          if($money>=$notes[$i])
+          {
+              // logic for Calculating The notes
+              $calNotes =floor($money/$notes[$i]);
+              $rem = floor($money % $notes[$i]);
+              $money = $rem;
+              $total += $calNotes;
+              echo $notes[$i]." Rs. Notes ---> ".$calNotes."\n";
+          }
+         $i++;
+          return Utility::vendingmachine($money,$notes,$i);
+      }
+    }   
+//day of the year
+
+public static function dayofweak($day,$month,$year)
+{
+
+
+    $y0 = $year - (14 - $month) / 12;
+    $x = $y0 + $y0/4 - $y0/100 + $y0/400;
+    $m0 = $month + 12 * ((14 - $month) / 12) - 2;
+    $d0 = ($day + $x + (31*$m0)/ 12) % 7;
+  
+    return $d0;
+}
+
+//temperature conversion 
+
+public static function temperature($temp)
+{
+   $F=0;
+    echo "1.convert into celcius:\n";
+    echo "2.convert into farenite:\n";
+    $choice=Utility::inputInteger();
+
+    switch ($choice)
+     {
+        case 1:
+            $F = ($temp * 9 / 5) + 32;
+            break;
+        
+        case 2:
+            $F = ($temp - 32) * 5 / 9;
+            break;
+
+        default:
+            echo "error..\n";
+    }
+    return $F;
+
+
+
+}
+
+//monthly salary
+public static function monthlysalary($P,$Y,$R)
+{
+    $n=12*$Y;
+    $R1 = $R / (12 * 100);
+	$payment = ($P * $R1) / (1 - (pow((1 + $R1), -$n)));
+	return $payment;
+}
+
+//square root of non negative number
+
+public static function squareroot($c)
+{
+    $t = $c;
+    $epsilon = 1e-15;
+    while (abs($t - $c / $t) > $epsilon * $t)
+     {
+        $t = ($c / $t + $t) / 2.0;
+    }
+    return $t;
+}
+
+// covert number decimal into binary
+
+public static function dectobinary($n)
+{
+    $dec=$n;
+    $binStr = '';
+   
+    while ($dec>=1){
+    $bin = $dec % 2;
+    $dec = round($dec/2, 0, PHP_ROUND_HALF_DOWN);
+    $binStr .= $bin;
+}
+   $binStr = strrev($binStr);
+    return $binStr;
+		
+	}
+
 
 //stopwatch
 
