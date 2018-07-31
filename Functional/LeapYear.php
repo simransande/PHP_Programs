@@ -1,15 +1,18 @@
 <?php
 
 include "Utility.php";
+include "Logging.php";
 
 echo "Enter the year:\n";
 $year=Utility::inputInteger();
+try{
 
-$result=Utility::leapYear($year);
-if($result==1){
-    echo "$year is leap year\n";
-}else if($result==2)
-echo "$year is not leap year\n";
-
+Utility::leapYear($year);
+}catch(LengthException $e)
+{
+    log::logger($e);
+    echo "message:". $e->getMessage();
+    
+}
 
 ?>

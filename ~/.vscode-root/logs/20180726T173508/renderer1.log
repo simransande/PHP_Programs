@@ -1,0 +1,6 @@
+[2018-07-26 17:35:10.712] [renderer1] [info] no standard startup: not the explorer viewlet
+[2018-07-26 17:36:02.546] [renderer1] [info] no standard startup: not just one text editor
+[2018-07-26 17:36:06.638] [renderer1] [info] No grammar found for scope source.smarty
+[2018-07-26 17:36:06.648] [renderer1] [info] No grammar found for scope text.html.javadoc
+[2018-07-26 17:36:30.900] [renderer1] [error] An unknown error occurred. Please consult the log for more details.
+[2018-07-26 17:36:49.357] [renderer1] [error] An unknown error occurred. Please consult the log for more details.

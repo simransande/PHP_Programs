@@ -51,26 +51,24 @@ public static function inputFloat()
 public static function leapYear($year)
 {
     //echo "this is :". strlen($year);
-            if(strlen($year)==4)
-          
+            if(strlen($year)!=4)
+            {
+                throw new LengthException("enter only 4 digit year");
+            }
+           else 
             {
                 if($year%4==0||$year%100==0||$year%400==0)
-                {//echo "Year is leap year\n";
-                            return 1;
+                {echo "Year is leap year\n";
+                        
                         
                 }
                 else
                 {
-                        return 2;
+                    echo "Year is not leap year\n"; 
                 }
 
             }
-            else
-            {
-                echo "Enter the 4 digit year only\n";
-                return 3;
-                
-            }
+          
 
 }
 
@@ -203,7 +201,6 @@ public static function couponNumber($n)
         $distinct = array_fill(0,$n,0);
         for ($i = 0; $i < $n; $i++) {
              $random=mt_rand(10,99);
-            echo "$random\n";
             for ($j = 0; $j < $n; $j++) {
                 if ($distinct[$j] == $random) {
                     break;
@@ -214,7 +211,7 @@ public static function couponNumber($n)
             }
         }
        foreach ($distinct as $value) {
-           echo "\n$value";}
+           echo "$value";}
        
     }
 
