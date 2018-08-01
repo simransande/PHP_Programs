@@ -110,7 +110,7 @@ public static function primeAnagramAndPalindrome($choice)
         case 1:
         $array=Utility::primeNumber();
         print_r($array);
-        $test =count($array);
+       // $test =count($array);
 
 
         for ($i = 0; $i < count($array); $i++)
@@ -205,7 +205,7 @@ public static function binarySearch( $arr1, $x)
     //$arr1=sort($arr);
     if (count($arr1) === 0) 
     return false;
-
+    
     $low = 0;
     $high = count($arr1)-1;
      
@@ -213,15 +213,18 @@ public static function binarySearch( $arr1, $x)
     {
   
         $mid = floor(($low + $high) / 2);
-        if($arr1[$mid] == $x) {
+        if($arr1[$mid] == $x) 
+        {
             return true;
         }
  
-        if ($x < $arr1[$mid]) {
+        if ($x < $arr1[$mid]) 
+        {
             
             $high = $mid -1;
         }
-        else {
+        else 
+        {
            
             $low = $mid + 1;
         }
@@ -275,10 +278,13 @@ for($i=0;$i<$n;$i++)
 }
 
 
-for ($j = 0; $j < count($arr) - 1; $j++) {
+for ($j = 0; $j < count($arr) - 1; $j++) 
+{
 
-    for ($k = $j+1; $k < count($arr); $k++) {
-        if ($arr[$j] > $arr[$k]) {
+    for ($k = $j+1; $k < count($arr); $k++)
+     {                                   
+        if ($arr[$j] > $arr[$k])
+         {
             $temp = $arr[$j];
             $arr[$j] = $arr[$k];
             $arr[$k] = $temp;
@@ -304,7 +310,7 @@ return $arr;
       {
           if($money>=$notes[$i])
           {
-              // logic for Calculating The notes
+              //calculating the note..
               $calNotes =floor($money/$notes[$i]);
               $rem = floor($money % $notes[$i]);
               $money = $rem;

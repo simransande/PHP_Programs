@@ -127,7 +127,14 @@ public static function harmonicNumber($value)
     for($i=1;$i<=$value;$i++)
     {
         $num=$num+(1.0/$i);
+        if($i!=$value)
+        {
         echo "1/$i"." + ";
+        }
+        else
+        {
+            echo "1/$i";
+        }
     }
     return $num;
 }
@@ -211,7 +218,7 @@ public static function couponNumber($n)
             }
         }
        foreach ($distinct as $value) {
-           echo "$value";}
+           echo "$value\n";}
        
     }
 
