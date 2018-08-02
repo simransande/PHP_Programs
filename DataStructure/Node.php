@@ -6,7 +6,9 @@ class Node
     public $next;
     function __construct()
     {
-        
+        // $this->data = $data;
+        // $this->next = NULL;
+    
     }
 }
 
