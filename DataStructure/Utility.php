@@ -1,4 +1,5 @@
 <?php
+include "Queue.php";
 class Utility
 {
     public static function input()
@@ -63,12 +64,52 @@ public static function inputLine()
     return $line;
 }
 
+public static function leapYear($year)
+{
+    //echo "this is :". strlen($year);
+            if(strlen($year)!=4)
+            {
+                throw new LengthException("enter only 4 digit year");
+            }
+           else 
+            {
+                if($year%4==0||$year%100==0||$year%400==0)
+                {echo "Year is leap year\n";
+                        
+                        
+                }
+                else
+                {
+                    echo "Year is not leap year\n"; 
+                }
+
+            }
+          
+
+}
+
+public static function dayofweak($day,$month,$year)
+{
+
+
+    $y0 = floor($year - (14 - $month) / 12);
+    $x = floor(($y0 + $y0/4) - ($y0/100 + $y0/400));
+    $m0 = floor(($month + 12) * (14 - $month) / (12 - 2));
+    $d0 = floor(($day + $x + (31*$m0)/ 12) % 7)+1;
+  
+    return $d0;
+}
+
+
 //banking
 
-public static function banking($q,$person,$balance)
+public static function banking($person,$balance)
 {
-    $count = 0;
-		while ($count < $person) {
+	$q=new Queue();
+	$count = 0;
+	// $person;
+		while ($count < $person)
+		 {
 			$flag;
 			echo "Bank Counter:\n";
 			do {
@@ -78,8 +119,8 @@ public static function banking($q,$person,$balance)
 				echo "2.Withdraw\n";
 				echo "3.check Current Balance is \n";
 				echo "4.Number of person in queue\n";
-				echo "5.Dequeue\n";
-				echo "6.Enqueue\n";
+				// echo "5.Dequeue\n";
+				// echo "6.Enqueue\n";
 				echo "Enter your choice\n";
 				$choice = Utility::inputInteger();
                 switch ($choice) 
@@ -89,6 +130,7 @@ public static function banking($q,$person,$balance)
 					echo "Enter the amt to deposit:\n";
 					$amt =Utility::inputInteger();
 					$balance = $balance + $amt;
+					$q->enqueue($balance);
 					echo "Balance is ". $balance ."\n";
 					break;
 
@@ -97,6 +139,7 @@ public static function banking($q,$person,$balance)
 					$withdrawal = Utility::inputInteger();
                     if ($withdrawal < $balance)
                      {
+					$q->dequeue();
 
 						$bal = $balance - $withdrawal;
 					        $balance = $balance - $withdrawal;
@@ -121,17 +164,17 @@ public static function banking($q,$person,$balance)
 					echo "Number of person in Queue" . " " .$number."\n";
 					break;
 
-				case 5:
-					$q->dequeue();
-					$number = $q->sizeOfQue();
-					echo "Number of person in Queue" . " " .$number."\n";
-					break;
+				// case 5:
+				// 	$q->dequeue();
+				// 	$number = $q->sizeOfQue();
+				// 	echo "Number of person in Queue" . " " .$number."\n";
+				// 	break;
 
-				case 6:
-					$q->enqueue();
-					$number = $q->sizeOfQue();
-					echo "Number of person in Queue" . " " .$number."\n";
-					break;
+				// case 6:
+				// 	$q->enqueue();
+				// 	$number = $q->sizeOfQue();
+				// 	echo "Number of person in Queue" . " " .$number."\n";
+				// 	break;
 
 				default:
 					echo "Invalid choice";
@@ -141,12 +184,74 @@ public static function banking($q,$person,$balance)
 				echo "Do you want to continue the transaction..\n";
 				echo "Press true or false:\n";
 
-				$flag = Utility::inputBoolean();
-			} while ($flag);
-			$q->deQue();
-		}
+				$flag = Utility::inputString();
+			} while ($flag=='true');
+			// if($flag=='false')
+			// {  
+			// 	echo "THANK YOU:\n";
+			// 	break;
+			// }
+			//$q->deQue();
+			$count++;
+		//}
+			}	
 
 	}
 
+	// //palindrome check
+
+	// public static function palindrome($str)
+	// {
+		
+	// 	$q=new Queue();
+	// 	$front;
+	// 	$rear;
+	// 	$f = 0;
+	// 	for($i=0;$i<strlen($str);$i++)
+	// 	{
+	// 		$q->enqueue(substr($str,$i));
+	// 	}
+	// 	do
+	// 	{	
+	// 	$front =$q->enqueue() ;
+	// 	if($q->isEmpty())
+	// 	{	
+	// 	break;
+	// 	}	
+	// 	$rear =$q->dequeue();
+	// 	if($front!=$rear)
+	// 	{	
+	// 	$f = 1;
+	// 	break;
+	// 	}
+
+	// 	}while(!$q->isEmpty());
+	// 	if( $f == 1 )
+	// 	{
+	// 	echo "strings is not palindrome";
+	// 	}	
+	// 	else
+	// 	{
+	// 	echo "strings is palindrome";
+	// 	}
+
+	// }
+   
+	//binary search tree..
+
+	public function fact($i)
+	{
+		if($i<=1)
+		{
+			return $i;
+		}
+		return $i*Utility::fact($i-1);
+	}
+	
+	public static function binarysearchtree($n)
+	{
+		$cn=(Utility::fact(2*$n))/(Utility::fact($n+1)*Utility::fact($n));
+		echo $cn."\n";
+	}
 }
 ?>

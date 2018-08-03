@@ -16,31 +16,31 @@ include "Stack.php";
 		echo "Matches and Mismatches: \n";
 			for ($i = 0; $i < $len; $i++)
 			{    
-			$ch = $exp[$i];
+				$ch = $exp[$i];
 
-			if ($ch == '(')
-			{
-                $stack->push($i);
-                
-			}
-			else if ($ch == ')')
-			{
-			try
-			{
-			    $p = $stack->pop()+1;
-			    echo "')' at index " .($i+1). " matched with '(' at index ". ($p) . "\n";
-			 }
-			catch(Exception $e)
-		    {
-			    echo "')' at index " .($i+1). " is unmatched";
-			}
-			} 
+				if ($ch == '(')
+				{
+					$stack->push($i);
+					
+				}
+				else if ($ch == ')')
+				{
+				try
+				{
+					$p = $stack->pop()+1;
+					echo "')' at index " .($i+1). " matched with '(' at index ". ($p) . "\n";
+				}
+				catch(Exception $e)
+				{
+					echo "')' at index " .($i+1). " is unmatched";
+				}
+				} 
             }
             
 			if (!$stack->isEmpty() )
 			{
                 echo "'(' at index " .($stack->pop() +1) . " is unmatched\n";
-			    echo "unbalenced expression...\n";
+			    echo "\n---unbalenced expression---\n";
 			}
 			else
 			{

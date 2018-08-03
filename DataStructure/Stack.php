@@ -8,39 +8,66 @@ class Stackclass
 
     public function __construct($limit = 10, $initial = array()) 
     {
-           // initialize the stack
+            
         $this->stack = $initial;
-        // stack can only contain this many items
+       
         $this->limit = $limit;
     }
 
-    public function push($item) 
+    public function push($item)            //add last
     {
-        // trap for stack overflow
+       
         if (count($this->stack) < $this->limit)
          {
-            // prepend item to the start of the array
-            array_unshift($this->stack, $item);
-        } else {
-            throw new RunTimeException('Stack is full!');
+            array_push($this->stack, $item);        //insert at last array_push
+        } else 
+        {
+            echo "Stack is full..\n";
         }
     }
 
-    public function pop() {
-        if ($this->isEmpty()) {
-            // trap for stack underflow
+    public function addFirst($item)
+    {
+        if(count($this->stack)<$this->limit)
+        {
+            array_unshift($this->stack, $item);         //insert at first array_unshift
+        }
+        else
+        {
+            echo "stack is full..\n";
+        }
+    }
+    public function pop()           //delete last
+     {
+        if ($this->isEmpty()) 
+        {
             throw new RunTimeException('Stack is empty!');
-        } else {
-            // pop item from the start of the array
+        } else 
+        {
+            return array_pop($this->stack);
+        }
+    }
+
+    public function deleteFirst()
+    {
+        if($this->isEmpty())
+        {
+            echo "stack is empty..\n";
+        }
+        else 
+        {
             return array_shift($this->stack);
         }
     }
+    public function top() 
+    {
 
-    public function top() {
         return current($this->stack);
+        
     }
 
-    public function isEmpty() {
+    public function isEmpty() 
+    {
         return empty($this->stack);
     }
 
