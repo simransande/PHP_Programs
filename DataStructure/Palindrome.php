@@ -1,6 +1,6 @@
 <?php
 include "Utility.php";
-include "Deque.php";
+include "LinkedList.php";
 
 echo "Enter any string:\n";
 $str=Utility::input();
@@ -8,7 +8,7 @@ $str=Utility::input();
 //Utility::palindrome($str);
 
 		
-		$q=new Deque();
+		$q=new LinkList();
 		$front;
 		$rear;
 		$f = 0;
@@ -18,7 +18,7 @@ $str=Utility::input();
 		}
 		do
 		{	
-		$front =$q->remove_front() ;
+		$front =$q->remove_front();
 		if($q->isEmpty())
 		{	
 		break;

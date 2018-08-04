@@ -7,6 +7,8 @@ echo "Binary search:\n";
 echo "***************\n";
 $startTime=microtime();
 echo "start time is: $startTime \n";
+echo "for integer or string\n";
+$status=Utility::inputString();
 echo "Enter nth value:\n";
 $n = Utility :: inputInteger();
 echo "Values are:\n";
@@ -38,7 +40,8 @@ if($result)
     echo  "***************\n";
     $startTime=microtime();
     echo "start time is: $startTime \n";
-
+    echo "for integer or string\n";
+    $status1=Utility::inputString();
     $result=Utility::insertionSort();
     print_r($result);
 
@@ -55,6 +58,9 @@ if($result)
     $startTime=microtime();
 
     echo "start time is: $startTime \n";
+    echo "for integer or string\n";
+    $status2=Utility::inputString();
+
     $result=Utility::bubbleSort();
     print_r($result);
 

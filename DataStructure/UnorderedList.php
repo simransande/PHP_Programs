@@ -10,31 +10,33 @@ $filename = "/var/www/html/DataStructure/word.txt";
 
 //$content = fread($fp, filesize($filename));
             while(($line=fgets($fp))!==false)           //till line not get empty
+            {
+                $lines = explode(" ", $line);
+                foreach($lines as $word)
                 {
-                    $lines = explode(" ", $line);
-                    foreach($lines as $word)
-              //  {
-                 $list->insert($word);
-             //   }
+                    $list->insert($word);
                 }
+            }
 
                 //print_r($lines);
                 $list->show($list);
 
 
             echo "Enter target keyword:\n";
-            $val=Utility::input();
+            $val=Utility::inputString();
             //echo $val;
 
             $status=$list->search($val);
             //fscanf($val,$list);
 
             if($status==true)
-        {
+         {
               echo "$val is found \n";
-            // $value=$list->delete($val);
+             $list->delete($val);
+             //str_replace($val,"null");
 
-                //echo $value;
+             $list->show($list);
+
 
             //echo "target is found";
   
@@ -42,6 +44,14 @@ $filename = "/var/www/html/DataStructure/word.txt";
         else
         {
         echo "$val not found\n";
+        echo "\n";
+        $list->insert($val);
+        //file_put_contents($filename ,$val);
+        file_put_contents($filename, $val, FILE_APPEND | LOCK_EX);
+      //  file_get_contents()
+
+        echo "after adding the new value list is:\n";
+        $list->show($list);
         }
             echo "";
             

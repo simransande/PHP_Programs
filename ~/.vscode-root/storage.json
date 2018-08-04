@@ -463,8 +463,6 @@
     "openedPathsList": {
         "workspaces": [
             "/var/www/html",
-            "/var/www/html",
-            "/var/www/html",
             "/var/www/html/Algorithm",
             "/var/www/html/Functional"
         ],

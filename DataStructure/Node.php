@@ -4,10 +4,10 @@ class Node
 {
     public $data;
     public $next;
-    function __construct()
+    function __construct($data)
     {
-        // $this->data = $data;
-        // $this->next = NULL;
+        $this->data = $data;
+        $this->next = null;
     
     }
 }

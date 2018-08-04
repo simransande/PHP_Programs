@@ -88,6 +88,48 @@ public static function leapYear($year)
 
 }
 
+public static function primeNumber()
+{
+   $array=[];
+   $k=0;
+    for ($x = 1; $x <= 1000; $x++)
+    {		
+      for ($i = 2; $i < $x; $i++) {		
+          if ($x % $i == 0) {
+  
+              break;
+          }
+      }
+      if ($x == $i) {
+        $array[$k]= $x;
+        $k++;
+        
+      }
+     
+  }
+  return $array;
+}
+
+public static function primeAnagram()
+{
+	$array=Utility::primeNumber();
+        print_r($array);
+       // $test =count($array);
+
+
+        for ($i = 0; $i < count($array); $i++)
+        {
+            for($j=$i+1;$j < count($array); $j++)
+            {
+                $result=Utility::anagram($array[$i],$array[$j]);
+                if($result)
+                {
+                    echo "$array[$i] and $array[$j] are anagram\n";
+                }
+            }
+        }
+}
+
 public static function dayofweak($day,$month,$year)
 {
 
@@ -252,6 +294,47 @@ public static function banking($person,$balance)
 	{
 		$cn=(Utility::fact(2*$n))/(Utility::fact($n+1)*Utility::fact($n));
 		echo $cn."\n";
+	}
+	public static function PrimeNumb($primeVal)
+	{
+		$arr = array( 001, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000 );
+		$r = 10;
+		 $c = 27;
+		 //  $k, $b;
+		echo "PRIME NUMBERS 1-1000\n";
+
+		$a = [];
+		for ($i = 0; $i < count($arr) - 1; $i++)
+		{
+			$k = -1;
+			$m = $arr[$i];
+			 $m1 = $arr[$i + 1];
+			for ($j = 0; $j < count($primeVal) ;$j++)
+			{
+				if ($primeVal[$j] > $m && $primeVal[$j] < $m1)
+				{
+					$k++;
+					$a[$i][$k] = $primeVal[$j];
+				}
+			}
+		}
+
+		for ($i = 0; $i < count($arr)- 1; $i++)
+		{
+			$p = $arr[$i];
+			 $p1 = $arr[$i + 1];
+		   echo $p ."-" . $p1 . " ";
+			for ($j = 0; $j < 25; $j++)
+			{
+				// if ($a[$i][$j] != null)
+				// {
+					echo $a[$i][$j];
+				// }
+
+			}
+		   echo "\n";
+		}
+
 	}
 }
 ?>

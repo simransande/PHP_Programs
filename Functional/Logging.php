@@ -3,7 +3,9 @@ class log
 {
   public static function logger($data)
    {
-            echo $data;
+            
+    
+          echo $data;
    }
 }
 ?>
