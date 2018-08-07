@@ -1,5 +1,7 @@
 <?php
-include "Queue.php";
+include "Queue1.php";
+include "Stack.php";
+include "LinkedList.php";
 class Utility
 {
     public static function input()
@@ -63,6 +65,17 @@ public static function inputLine()
     $line=stream_get_line(STDIN, 1024 ,PHP_EOL);
     return $line;
 }
+public static function reverse($n)
+{
+	$sum=0;
+	while($n>0)
+	{
+		$x=$n%10;
+		$sum=$sum*10+$x;
+		$n=floor($n/10);
+	}
+	return $sum;
+}
 
 public static function leapYear($year)
 {
@@ -109,11 +122,33 @@ public static function primeNumber()
   }
   return $array;
 }
+public static function anagram($string1,$string2)
+{
+    $arr1=str_split($string1);
+    $arr2=str_split($string2);
+    // $l1=strlen($arr1);
+    // $l2=strlen($arr2);
+
+    // $arr1=strtolower($arr1);
+    // $arr2=strtolower($arr2);
+     sort($arr1);
+    sort($arr2);
+
+    if($arr1==$arr2)
+    {
+        return true;
+    }else
+    {
+        return false;
+    }
+
+
+}
 
 public static function primeAnagram()
 {
 	$array=Utility::primeNumber();
-        print_r($array);
+      //  print_r($array);
        // $test =count($array);
 
 
@@ -124,20 +159,21 @@ public static function primeAnagram()
                 $result=Utility::anagram($array[$i],$array[$j]);
                 if($result)
                 {
-                    echo "$array[$i] and $array[$j] are anagram\n";
+                   //echo $array[$i]." ".$array[$j]." " ;
                 }
             }
-        }
+		}
+		return $array;
 }
 
-public static function dayofweak($day,$month,$year)
+public static function dayofweak($month,$day,$year)
 {
 
 
     $y0 = floor($year - (14 - $month) / 12);
     $x = floor(($y0 + $y0/4) - ($y0/100 + $y0/400));
     $m0 = floor(($month + 12) * (14 - $month) / (12 - 2));
-    $d0 = floor(($day + $x + (31*$m0)/ 12) % 7)+1;
+    $d0 = floor(($day + $x + (31*$m0)/ 12) % 7);
   
     return $d0;
 }
@@ -181,7 +217,7 @@ public static function banking($person,$balance)
 					$withdrawal = Utility::inputInteger();
                     if ($withdrawal < $balance)
                      {
-					$q->dequeue();
+					$q->deque();
 
 						$bal = $balance - $withdrawal;
 					        $balance = $balance - $withdrawal;
@@ -240,45 +276,52 @@ public static function banking($person,$balance)
 
 	}
 
-	// //palindrome check
+//palindrome
 
-	// public static function palindrome($str)
+public static function palindrome($stra)
+{
+	$a=str_split($stra,1);
+	//print_r($str);
+	$q=new Queue();
+	$front=0;
+	$rear=0;
+	//$f = 0;
+	// while( $q->isEmpty()!=0 )
 	// {
-		
-	// 	$q=new Queue();
-	// 	$front;
-	// 	$rear;
-	// 	$f = 0;
-	// 	for($i=0;$i<strlen($str);$i++)
-	// 	{
-	// 		$q->enqueue(substr($str,$i));
-	// 	}
-	// 	do
-	// 	{	
-	// 	$front =$q->enqueue() ;
-	// 	if($q->isEmpty())
-	// 	{	
-	// 	break;
-	// 	}	
-	// 	$rear =$q->dequeue();
-	// 	if($front!=$rear)
-	// 	{	
-	// 	$f = 1;
-	// 	break;
-	// 	}
+			for($i=0;$i<floor(count($a)/2);$i++)
+			{
+				$front=$q->enqueue($a[$i]);
+			}	
+			$i=$front;
+			
+			//$s=array($stra);
+			$s=strrev($stra);
+			
+			$s=str_split($s,1);
+			
+			for($m=0; $m<floor(count($s)/2) ; $m++)
+			{
+				$k=$q->deque();
+				if($s[$m]==$k)
+				{
+					$i++;
+					continue;
+				}
 
-	// 	}while(!$q->isEmpty());
-	// 	if( $f == 1 )
-	// 	{
-	// 	echo "strings is not palindrome";
-	// 	}	
-	// 	else
-	// 	{
-	// 	echo "strings is palindrome";
-	// 	}
+				else{
+					break;
+				}
+			}
 
-	// }
-   
+			$str=$q->isEmpty();
+			if($str)
+			{
+				echo " string is pal";
+			}else{
+				echo " string is not pal";
+
+			}
+		}
 	//binary search tree..
 
 	public function fact($i)
@@ -290,20 +333,58 @@ public static function banking($person,$balance)
 		return $i*Utility::fact($i-1);
 	}
 	
+	// BINARY SEARCH
 	public static function binarysearchtree($n)
 	{
 		$cn=(Utility::fact(2*$n))/(Utility::fact($n+1)*Utility::fact($n));
 		echo $cn."\n";
 	}
-	public static function PrimeNumb($primeVal)
+
+	
+public static function PrimeAnagram2D($prime,$primeAna)
+{
+	 $j = 0;
+	$arr = array(array(),array());
+	$row = 0;
+	 $row1 = 0;
+	for ($i = 0; $i < 167; $i++)
 	{
-		$arr = array( 001, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000 );
+		if ($primeAna[$j] != $prime[$i])
+		{
+			$arr[$row][0] = $prime[$i];
+			$row++;
+		}
+		else
+		{
+			$arr[$row1][1] = $prime[$i];
+			$j++;
+			$row1++;
+		}
+	}
+	for ($i = 0; $i < 100; $i++)
+	{
+		for ($j1 = 0; $j1 < 2; $j1++)
+		{
+			if ($arr[$i][$j1] != 0)
+				echo $arr[$i][$j1] . " ";
+		}
+		echo "";
+	}
+}
+	//PRIME NUMBER IN 2D
+	public static function PrimeNumber2D($primeVal)
+	{
+		$arr = array( 1, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000 );
 		$r = 10;
 		 $c = 27;
+
+		// $myvalue=range($primeVal[$arr[0]],$primeVal[$arr[1]]);
+		 $a=array_fill(0,10,array_fill(0,25,0));
+		// print_r($a);
 		 //  $k, $b;
 		echo "PRIME NUMBERS 1-1000\n";
 
-		$a = [];
+		// $a = array_fill(0,0);
 		for ($i = 0; $i < count($arr) - 1; $i++)
 		{
 			$k = -1;
@@ -324,17 +405,99 @@ public static function banking($person,$balance)
 			$p = $arr[$i];
 			 $p1 = $arr[$i + 1];
 		   echo $p ."-" . $p1 . " ";
+		   
 			for ($j = 0; $j < 25; $j++)
 			{
-				// if ($a[$i][$j] != null)
-				// {
-					echo $a[$i][$j];
-				// }
+			
+				 if ($a[$i][$j] != 0)
+				{
+					echo $a[$i][$j]." ";
+				}
+			
 
 			}
 		   echo "\n";
 		}
-
+		return $primeVal;
 	}
+
+	//prime anagram stack
+
+	public static function primeanastack($number)
+	{
+		$s = new Stackclass();
+		$l=new LinkList();
+
+		//print_r($number);
+		$len=count($number);
+		//echo $len;
+	//	$arr=[[]];
+		for($i=0;$i<$len;$i++)
+		{
+			if(Utility::primeNumber($i))
+			{
+				$s=Utility::reverse($i);
+				if(Utility::anagram($i,$s))
+				{
+					$l->insert($i);
+				}
+			}
+		}
+		$r=$l->size();
+		for($i=0;$i<=$r;$i++)
+		{
+			$k=$l->getLast($i);
+			$s->push($k);
+		}
+		for($i=1;$i<=$r;$i++)
+		{
+			$k=$s->pop();
+			echo 
+			$k." " ."\n";
+		}
+		}
+	
+	// 	//prime anagram queue
+	// 	public static function primeanaqueue($number)
+	// {
+	// 	// $q=new Queue();
+	// 	// $q->enqueue(10);
+	// 	$l=new LinkList();
+	// 	//echo $s;
+	// 	//print_r($number);
+	// 	//$len=count($number);
+	// 	//echo $len;
+	// //	$arr=[[]];
+	// 	for($i=0;$i<$number;$i++)
+	// 	{
+	// 		if(Utility::primeNumber($i))
+	// 		{
+	// 			$s=Utility::reverse($i);
+	// 			if(Utility::anagram($i,$s))
+
+	// 			{
+	// 				$l->insert($i);
+	// 			}
+	// 		}
+	// 	}
+	// 	$r=$l->size();
+	// 	$s=new Queue();
+	// 	for($i=0;$i<=$r;$i++)
+	// 	{
+	// 		$k=$l->getLast($i);
+	// 		$m=$s->enqueue($k);
+	// 		echo $m;
+			
+	// 	}
+	// 	for($i=1;$i<=$r;$i++)
+	// 	{
+	// 		$k=$s->deque();
+	// 		echo $k." " ."\n";
+			
+	// 	}
+	// 	}
+	
+
+
 }
 ?>

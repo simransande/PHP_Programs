@@ -1,7 +1,7 @@
 <?php
 
 include "Utility.php";
-include "LinkedList.php";
+//include "LinkedList.php";
 
 $list=new LinkList();
 

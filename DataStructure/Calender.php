@@ -23,9 +23,11 @@ echo "   " . $months[$month-1]. " " .$year;
 echo "\n";
 echo " S\tM\tT\tW\tT\tF\tS\n";
 $d = Utility::dayofweak($month, 1, $year);
-for ($i = 0; $i < $d; $i++){
-echo "\t";}
-for ($i = 1; $i <= $days[$month]; $i++) 
+for ($i = 0; $i < $d; $i++)
+{
+echo "\t";
+}
+for ($i = 1; $i <= $days[$month-1]; $i++) 
 {
    
     echo $i."\t";

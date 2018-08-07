@@ -93,11 +93,18 @@ class LinkList
         $current->data=$current->next;
 
     }
+    public function addLast($data)
+    {
+
+        insert($data);
+
+        
+    }
 
     public function removeFirst()
     {
          $current = $this->head;
-        $thus->head=$current->next;
+        $this->head=$current->next;
     }
     public function getFirst()
     {
@@ -129,9 +136,9 @@ class LinkList
             $previous=$current;
             $current=$current->next;
         }
-        return $cureent->data;
+        return $current->data;
         }
-    function size()
+     function size()
     {
         return $this->size;
     }
