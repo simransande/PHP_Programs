@@ -1,0 +1,25 @@
+{
+    "Apple":[
+        {
+            "numOfShare":20,
+            "price":20000
+        }
+    ],
+
+    "Reliance":[
+        {
+            "numOfShare":30,
+            "price":15000
+        }
+    ],
+
+    "TCS":[
+        {
+            "numOfShare":10,
+            "price":99000
+        }
+    ]
+
+
+
+}
