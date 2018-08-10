@@ -1,72 +1,42 @@
 <?php
-
-$suits= array("Clubs", "Diamonds", "Hearts", "Spades");
-$ranks = array("2", "3", "4", "5", "6", "7", "8", "9", "10","Jack", "Queen", "King", "Ace");
-
-// $result = array_merge($suits, $ranks);
-// print_r($result);
-// $deck = array();
+  
  
-foreach ($suits as $suit) {
-    foreach ($ranks as $face) {
-        $cards[] = array ("face"=>$face, "suit"=>$suit);
-    }
-}
-shuffle($cards);
+  $values=array("2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace");
+  $suits=array("Clubs", "Diamonds", "Hearts", "Spades");
+   $deck = array();
+        $n = 0;
+        for ($i = 0; $i < sizeof($values); $i++) {
+            for ($j = 0; $j < sizeof($suits); $j++) {
+                $deck[$n] = $values[$i] . " of " . $suits[$j];
+                $n++;
+            }
+        }
+       
+  
+        $a1 = [[]];
+        $a = $deck;
+        for ($i = 0; $i < sizeof($deck); $i++) {
+            $r = rand(0, 51);
+            $temp = $a[$r];
+            $a[$r] = $a[$i];
+            $a[$i] = $temp;
+        }
+        $n1 = 0;
+        for ($i = 0; $i < 4; $i++) {
+            for ($j = 0; $j < 9; $j++) {
+                $a1[$i][$j] = $a[$n1];
+                $n1++;
+            }
+        }
 
-$n=count($suits)*count($ranks);
-
-for($i=0;$i<$n;$i++)
- {
-    $r = $i +(rand(1,0) * ($n-$i));
-    $temp = $cards[$r];
-    $cards[$r] = $cards[$i];
-    $cards[$i] = $temp;
-$card = array_shift($cards);
- 
-echo $card['face'] . ' of ' . $card['suit']."\n";
-
- }
- for($i = 0; $i < 4; $i++) 
-{
- echo "---------- PLAYER NUMBER: " . ($i) . " HAVE CARDS ARE BELOW ----------\n";
-    for ($j = 0; $j < 9; $j++) 
-     {
-     echo $cards[$i+$j*4] . " (Card " . ($i+$j*4).")\n";
-      
-     }
-    }
-// $n = count($suits)*count($ranks);
-// echo $n;
-
-// // // $deck=[];
-// for($i = 0; $i < count($ranks); $i++) 
-// {
-//    for ($j = 0; $j < count($suits); $j++) 
-//     {
-//       $cards[count($suits)*$i + $j] = $ranks[$i] . " of " . $suits[$j];
-//     }
-// }
-// for ($i = 0; $i < $n; $i++) 
-// {
-//    $r = $i +(rand(1,0) * ($n-$i));
-//    $temp = $cards[$r];
-//    $cards[$r] = $cards[$i];
-//    $cards[$i] = $temp;
-// }
-// for($i = 0; $i < 4; $i++) 
-// {
-//  echo "---------- PLAYER NUMBER: " . ($i) . " HAVE CARDS ARE BELOW ----------\n";
-//    for ($j = 0; $j < 9; $j++) 
-//     {
-//       echo $cards[$i+$j*4] . " (Card " . ($i+$j*4).")\n";
-      
-//     }
+        for ($i = 0; $i < 4; $i++) {
+            echo "Player ($i) \n";
+            for ($j = 0; $j < 9; $j++) {
+               echo $a1[$i][$j]."\n" ;
+            }
+            echo "\n";
+        }
+        return $a;
     
-
-
-    
-
-
-
 ?>
+
