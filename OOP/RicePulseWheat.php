@@ -1,7 +1,7 @@
 <?php
 
 //$r=readfile("Rise,Pulse,Wheat.json");
-$s=file_get_contents("Rise,Pulse,Wheat.json");  //to get file
+$s=file_get_contents("RisePulseWheat.json");  //to get file
 //echo $s;
 $json=json_decode($s,true);   //for geting file from json into php
 //echo $json;

@@ -51,6 +51,42 @@ public static function inputLine()
     $line=stream_get_line(STDIN, 1024 ,PHP_EOL);
     return $line;
 }
+
+public static function Deckofcards($deck)
+{
+    $a1 = [[]];
+        $a =$deck;
+        //shuffeling the cards
+        for ($i = 0; $i < sizeof($deck); $i++) 
+        {
+            $r = rand(0, 51);
+            $temp = $a[$r];
+            $a[$r] = $a[$i];
+            $a[$i] = $temp;
+        }
+        $n1 = 0;
+        //distributing the cards in 4 players
+        for ($i = 0; $i < 4; $i++)
+         {
+            for ($j = 0; $j < 9; $j++) 
+            {
+                $a1[$i][$j] = $a[$n1];
+                $n1++;
+            }
+        }
+        //display the cards 
+        for ($i = 0; $i < 4; $i++) 
+        {
+            echo "Player ($i) \n";
+            for ($j = 0; $j < 9; $j++) 
+            {
+               echo $a1[$i][$j]."\n" ;
+            }
+            echo "\n";
+        }
+        return $a;
+
+}
 }
 ?>
 

@@ -41,9 +41,9 @@ $idno=Null;
          
          //echo $txt;
 
-        $myfile=fopen($str,"w");
-        fwrite($myfile,$txt);
-        fclose($myfile);
+        $project=fopen($str,"w");
+        fwrite($project,$txt);
+        fclose($project);
 
     
   }
