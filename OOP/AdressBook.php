@@ -134,7 +134,6 @@ function view()
     echo "Last name :".$json[$i]['Last name']."\n";
     echo "Mobile number :".$json[$i]['Mobile number']."\n";
     echo "District name :".$json[$i]['District name']."\n";
-    echo "State name :".$json[$i]['State name']."\n";
     echo "Zip code :".$json[$i]['Zip code']."\n";
     echo "Aadhar number :".$json[$i]['Aadhar number']."\n";
     break;

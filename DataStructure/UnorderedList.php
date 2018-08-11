@@ -47,8 +47,13 @@ $filename = "/var/www/html/DataStructure/word.txt";
         echo "\n";
         $list->insert($val);
         //file_put_contents($filename ,$val);
-        file_put_contents($filename, $val, FILE_APPEND | LOCK_EX);
-      //  file_get_contents()
+        file_put_contents($filename, $val, FILE_APPEND | LOCK_EX);   /*FILE_APPEND − If file filename already 
+                                                                     exists, append the data to the file 
+                                                                       instead of overwriting it.
+                                                                       
+                                                                       LOCK_EX − Acquire an exclusive lock on
+                                                                        the file while proceeding to the writing.*/
+        //  file_get_contents()
 
         echo "after adding the new value list is:\n";
         $list->show($list);

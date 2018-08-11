@@ -107,13 +107,16 @@ public static function primeNumber()
    $k=0;
     for ($x = 1; $x <= 1000; $x++)
     {		
-      for ($i = 2; $i < $x; $i++) {		
-          if ($x % $i == 0) {
+	  for ($i = 2; $i < $x; $i++)   //for prime numbers only ths for loopis included
+	  {		
+		  if ($x % $i == 0)
+		   {
   
               break;
           }
       }
-      if ($x == $i) {
+	  if ($x == $i) 
+	  {
         $array[$k]= $x;
         $k++;
         
@@ -288,7 +291,7 @@ public static function palindrome($stra)
 	//$f = 0;
 	// while( $q->isEmpty()!=0 )
 	// {
-			for($i=0;$i<floor(count($a)/2);$i++)
+			for($i=0;$i<floor(count($a)/2);$i++)    //half part of string enqueue
 			{
 				$front=$q->enqueue($a[$i]);
 			}	
@@ -299,7 +302,7 @@ public static function palindrome($stra)
 			
 			$s=str_split($s,1);
 			
-			for($m=0; $m<floor(count($s)/2) ; $m++)
+			for($m=0; $m<floor(count($s)/2) ; $m++)    //half part after reversing
 			{
 				$k=$q->deque();
 				if($s[$m]==$k)

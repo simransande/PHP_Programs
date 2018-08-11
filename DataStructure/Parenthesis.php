@@ -1,7 +1,7 @@
 <?php
 
 include "Utility.php";
-include "Stack.php";
+//include "Stack.php";
 
 
 	echo "Enter max size: \n";
@@ -20,14 +20,14 @@ include "Stack.php";
 
 				if ($ch == '(')
 				{
-					$stack->push($i);
+					$stack->push($i);  //push "(" in stack
 					
 				}
 				else if ($ch == ')')
 				{
 				try
 				{
-					$p = $stack->pop()+1;
+					$p = $stack->pop()+1;   //pop ")" in stack
 					echo "')' at index " .($i+1). " matched with '(' at index ". ($p) . "\n";
 				}
 				catch(Exception $e)

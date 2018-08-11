@@ -11,7 +11,7 @@ $filename = "/var/www/html/DataStructure/number.txt";
 //$content = fread($fp, filesize($filename));
             while(($line=fgets($fp))!==false)           //till line not get empty
                 {
-                    $lines = explode(" ", $line);
+                    $lines = explode(" ", $line);     //thespace and give another value as a string
                     asort($lines);
                     foreach($lines as $word)
               {
