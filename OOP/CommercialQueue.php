@@ -3,7 +3,7 @@ include 'Queue.php';
 include 'Linkedlist.php';
 $q1 = new Queue();
 $l1 = new LinkedList();
-$filecontent = file_get_contents("rohit.json");
+$filecontent = file_get_contents("simran.json");
 $json = json_decode($filecontent, true);
 for ($i = 1; $i < sizeof($json); $i++) {
     $k = $json[$i]["Purchase date"];
