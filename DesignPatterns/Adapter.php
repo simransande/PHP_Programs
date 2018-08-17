@@ -1,5 +1,5 @@
 <?php
-class SimpleBook {
+class SimpleBook {    //popo,gtrstr&prvt field
     private $author;
     private $title;
     function __construct($author_in, $title_in) {
@@ -20,21 +20,13 @@ class BookAdapter {
         $this->book = $book_in;
     }
     function getAuthorAndTitle() {
-        return $this->book->getTitle().' by '.$this->book->getAuthor();
+        return $this->book->getTitle()." by ".$this->book->getAuthor()."\n";
     }
 }
-
-  // client
-
-  echo"BEGIN TESTING ADAPTER PATTERN\n";
-  echo " ";
 
   $book = new SimpleBook("Gamma, Helm, Johnson, and Vlissides", "Design Patterns");
   $bookAdapter = new BookAdapter($book);
   echo"Author and Title:".$bookAdapter->getAuthorAndTitle();
-  echo"";
-
-  echo"\nEND TESTING ADAPTER PATTERN\n";
 
 
 

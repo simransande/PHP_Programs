@@ -2,7 +2,7 @@
 include "Factory.php";
 
 // factory create the Automobile object
-$result = AutomobileFactory::create('Bugatti', 'Veyron');
+$result = AutomobileFactory::create('BMW', 'X5');
 
 print_r($result->getMakeAndModel());
 ?>

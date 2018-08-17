@@ -459,11 +459,13 @@
     },
     "theme": "vs-dark vscode-theme-defaults-themes-dark_plus-json",
     "themeBackground": "#1e1e1e",
-    "pickerWorkingDir": "/var/www",
+    "pickerWorkingDir": "/home/bridgelabz",
     "openedPathsList": {
         "workspaces": [
+            "/home/bridgelabz/go",
+            "/home/bridgelabz/go",
             "/var/www/html",
-            "/var/www/html",
+            "/home/bridgelabz/go",
             "/var/www/html",
             "/var/www/html/Algorithm",
             "/var/www/html/Functional"
@@ -473,8 +475,8 @@
     "windowsState": {
         "openedWindows": [],
         "lastActiveWindow": {
-            "folderPath": "/var/www/html",
-            "backupPath": "/var/www/html/~/.vscode-root/Backups/40d1b2d83998fabacb726e5bc3d22129",
+            "folderPath": "/home/bridgelabz/go",
+            "backupPath": "/var/www/html/~/.vscode-root/Backups/05b1b559a9a566e1da02c44f798e3e67",
             "uiState": {
                 "mode": 0,
                 "x": 59,

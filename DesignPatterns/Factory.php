@@ -1,5 +1,6 @@
 <?php
-class Automobile
+class Automobile // This allows interfaces for creating objects,
+                 // but allow subclasses to determine which class to instantiate
 {
     private $vehicleMake;
     private $vehicleModel;

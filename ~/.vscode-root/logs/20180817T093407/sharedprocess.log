@@ -1,0 +1,54 @@
+[2018-08-17 09:34:12.270] [sharedprocess] [info] main {"machineId":"88331559c6f73721404d52c5f3828bf6f19dabf0893032f51e1fa1745072a16e"}
+[2018-08-17 09:34:12.420] [sharedprocess] [info] Scanned user extensions: 3
+[2018-08-17 09:34:12.799] [sharedprocess] [info] Scanned system extensions: 70
+[2018-08-17 09:34:12.920] [sharedprocess] [info] Scanned user extensions: 3
+[2018-08-17 09:34:12.922] [sharedprocess] [info] Scanned user extensions: 3
+[2018-08-17 09:34:12.927] [sharedprocess] [info] Scanned user extensions: 3
+[2018-08-17 09:34:12.986] [sharedprocess] [info] Scanned system extensions: 70
+[2018-08-17 09:34:12.988] [sharedprocess] [info] Scanned system extensions: 70
+[2018-08-17 09:34:14.771] [sharedprocess] [info] Scanned user extensions: 3
+[2018-08-17 09:34:15.627] [sharedprocess] [info] Installing extension: php-debug
+[2018-08-17 09:34:15.627] [sharedprocess] [info] Installing extension: Go
+[2018-08-17 09:34:15.634] [sharedprocess] [info] Scanned user extensions: 3
+[2018-08-17 09:34:15.639] [sharedprocess] [info] Scanned user extensions: 3
+[2018-08-17 09:34:19.459] [sharedprocess] [info] Downloaded extension: php-debug
+[2018-08-17 09:34:19.995] [sharedprocess] [info] Extracted extension to /home/bridgelabz/.vscode/extensions/.felixfbecker.php-debug-1.12.4: felixfbecker.php-debug-1.12.4
+[2018-08-17 09:34:19.995] [sharedprocess] [info] Renamed to /home/bridgelabz/.vscode/extensions/felixfbecker.php-debug-1.12.4
+[2018-08-17 09:34:19.995] [sharedprocess] [info] Installation completed. felixfbecker.php-debug-1.12.4
+[2018-08-17 09:34:20.049] [sharedprocess] [info] Extensions installed successfully: felixfbecker.php-debug
+[2018-08-17 09:34:20.167] [sharedprocess] [info] Scanned user extensions: 3
+[2018-08-17 09:34:20.203] [sharedprocess] [info] Scanned system extensions: 70
+[2018-08-17 09:34:21.811] [sharedprocess] [info] Downloaded extension: Go
+[2018-08-17 09:34:23.951] [sharedprocess] [info] Extracted extension to /home/bridgelabz/.vscode/extensions/.ms-vscode.go-0.6.88: ms-vscode.go-0.6.88
+[2018-08-17 09:34:23.951] [sharedprocess] [info] Renamed to /home/bridgelabz/.vscode/extensions/ms-vscode.go-0.6.88
+[2018-08-17 09:34:23.951] [sharedprocess] [info] Installation completed. ms-vscode.go-0.6.88
+[2018-08-17 09:34:24.044] [sharedprocess] [info] Extensions installed successfully: ms-vscode.go
+[2018-08-17 09:34:24.170] [sharedprocess] [info] Scanned user extensions: 3
+[2018-08-17 09:34:24.205] [sharedprocess] [info] Scanned system extensions: 70
+[2018-08-17 09:34:52.278] [sharedprocess] [info] Starting to clean up unused language packs.
+[2018-08-17 09:39:14.821] [sharedprocess] [info] Scanned user extensions: 3
+[2018-08-17 09:44:14.841] [sharedprocess] [info] Scanned user extensions: 3
+[2018-08-17 09:49:14.856] [sharedprocess] [info] Scanned user extensions: 3
+[2018-08-17 09:54:14.870] [sharedprocess] [info] Scanned user extensions: 3
+[2018-08-17 09:59:14.884] [sharedprocess] [info] Scanned user extensions: 3
+[2018-08-17 10:04:14.897] [sharedprocess] [info] Scanned user extensions: 3
+[2018-08-17 10:09:14.910] [sharedprocess] [info] Scanned user extensions: 3
+[2018-08-17 10:14:14.931] [sharedprocess] [info] Scanned user extensions: 3
+[2018-08-17 10:19:14.948] [sharedprocess] [info] Scanned user extensions: 3
+[2018-08-17 10:24:14.966] [sharedprocess] [info] Scanned user extensions: 3
+[2018-08-17 10:29:14.982] [sharedprocess] [info] Scanned user extensions: 3
+[2018-08-17 10:34:15.019] [sharedprocess] [info] Scanned user extensions: 3
+[2018-08-17 10:39:15.033] [sharedprocess] [info] Scanned user extensions: 3
+[2018-08-17 10:44:15.047] [sharedprocess] [info] Scanned user extensions: 3
+[2018-08-17 10:49:15.061] [sharedprocess] [info] Scanned user extensions: 3
+[2018-08-17 10:54:15.075] [sharedprocess] [info] Scanned user extensions: 3
+[2018-08-17 10:59:15.090] [sharedprocess] [info] Scanned user extensions: 3
+[2018-08-17 11:04:15.105] [sharedprocess] [info] Scanned user extensions: 3
+[2018-08-17 11:09:15.120] [sharedprocess] [info] Scanned user extensions: 3
+[2018-08-17 11:14:15.136] [sharedprocess] [info] Scanned user extensions: 3
+[2018-08-17 11:14:40.844] [sharedprocess] [info] Scanned user extensions: 3
+[2018-08-17 11:14:40.846] [sharedprocess] [info] Scanned user extensions: 3
+[2018-08-17 11:14:40.856] [sharedprocess] [info] Scanned user extensions: 3
+[2018-08-17 11:14:40.953] [sharedprocess] [info] Scanned system extensions: 70
+[2018-08-17 11:14:40.957] [sharedprocess] [info] Scanned system extensions: 70
+[2018-08-17 11:14:43.608] [sharedprocess] [info] Scanned user extensions: 3

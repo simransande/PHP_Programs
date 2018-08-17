@@ -34,12 +34,12 @@ class Divider
         return $a / $b;
     }
 }
-
-// Client code
 $adder = new Adder();
-echo '254 + 113 = ', $adder->add(254, 113), "\n";
+echo "111 + 20 = ", $adder->add(111, 20), "\n";
 $divider = new Divider();
-echo '256 / 8 = ', $divider->divide(256, 8), "\n";
+echo "46 / 2 = ", $divider->divide(46, 2), "\n";
+$mul = new Multiplier();
+echo "2 * 2 = ", $mul->multiply(2, 2), "\n";
 
 
 ?>
