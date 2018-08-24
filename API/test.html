@@ -1,0 +1,108 @@
+
+<html>
+    <head>
+   
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<script>
+
+    function insert()
+    {
+       console.log("inside insert");
+    //    debugger;
+       var firstname= document.getElementById("f_name").value;
+       var lastname= document.getElementById("l_name").value;
+       var middlename=document.getElementById("m_name").value;
+       var age=document.getElementById("MyAge").value;
+    // debugger;
+    var   data={fname:firstname,lname:lastname,mname:middlename,age:age,store:'canData'};
+       $.ajax({
+           type:'POST',
+           url:"candidate.php",
+            data : data,          
+           success: function(data,status,xhr){
+               alert("success");
+           },
+           error:function (xhr,status,error){
+               alert("error");
+           }
+
+       });
+    }
+    function read()
+    {
+        
+        var firstname= document.getElementById("sId").value;
+        var results="";
+        //var data={fname:firstname,store:'canDataGet'};
+        $.ajax({
+            type:'GET',
+            url:"View.php",
+            data:{firstname:firstname},
+            dataType: 'json',
+
+            success: function(response){
+               alert(response);
+               if(response.status=="success"){
+
+
+             results+= "<div class='table-responsive'>";
+             results+= "<table  class='table table-bordered table-striped'>";
+             results+=  "<tr>" +
+                        "<th>first name</th>" +
+                        "<th>last name</th>" +
+                        "<th>middle name</th>" +
+                        "<th>age</th>" +
+                        "</tr>";
+            $.each(response.data, function(key,data) {
+                 results+='<tr><td>'+data.Fname+'</td><td>'+data.Lname+'</td><td>'+data.Mname+'</td><td>'+data.Age+'</td></tr>';
+            });
+            results+= "</table>";
+            results+= "</div>";
+            $(".container").html(results);
+        }else{
+            $(".container").html('No Result Found');
+          }
+
+           }
+        });
+        
+           
+    }
+    function delete()
+    {
+        var firstname= document.getElementById("sId").value;
+        $.ajax({
+            type:'DELETE',
+            url:"Delete.php",
+            data:{firstname:firstname},
+    }
+</script>
+<body>
+<center>
+
+    <h4>Enter the id to view the information</h4>
+    <input type="text" id="sId" placeholder="ID"><br>
+    <br> <button type="button" onclick="read()">view</button>
+    <!-- <button type="button">delete</button><br> -->
+    <div class="container"></div>
+
+       <br> first name: <input type="text" name="FirstName" id="f_name" >
+        last name: <input type="text" name="LastName" id="l_name" >
+        midle name: <input type="text" name="MiddleName" id="m_name">
+        age: <input type="text" name="age" id="MyAge" ><br> 
+</center><br>
+       
+<div>
+
+        <center>
+ <button type="button" onclick="insert()">add</button>
+ 
+
+</center>
+</div>
+
+</body>
+
+</html>
