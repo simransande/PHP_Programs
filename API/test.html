@@ -7,15 +7,17 @@
 </head>
 <script>
 
+
     function insert()
     {
+       
        console.log("inside insert");
-    //    debugger;
-       var firstname= document.getElementById("f_name").value;
+    //   debugger;
+       var firstname= document.getElementById("fname").value;
        var lastname= document.getElementById("l_name").value;
        var middlename=document.getElementById("m_name").value;
-       var age=document.getElementById("MyAge").value;
-    // debugger;
+       var age=document.getElementById("MAge").value;
+   // debugger;
     var   data={fname:firstname,lname:lastname,mname:middlename,age:age,store:'canData'};
        $.ajax({
            type:'POST',
@@ -29,6 +31,10 @@
            }
 
        });
+       document.getElementById("fname").value=null;
+       document.getElementById("l_name").value=null;
+       document.getElementById("m_name").value=null;
+       document.getElementById("MAge").value=null;
     }
     function read()
     {
@@ -70,28 +76,91 @@
         
            
     }
-    function delete()
+    function deletes()
     {
+        
         var firstname= document.getElementById("sId").value;
+        //var $ele = $(this).parent().parent();
+        var data={fname:firstname,store:'Delete'}
         $.ajax({
-            type:'DELETE',
-            url:"Delete.php",
-            data:{firstname:firstname},
+    type:'POST',
+    url:'Delete.php',
+    data:data,
+    success: function(response){
+        //  if(response.status=="success")
+        
+            $(".container").html(response);
+            alert("done");
+         },
+         error:function (xhr,status,error){
+              alert("error");
+        //     response.fadeOut().remove();
+        //  }else{
+        //      alert("can't delete the row")
+        //  }
+    
     }
+
+     });
+     document.getElementById("sId").value=null;
+ 
+    }
+
+    function update()
+
+    {
+        // debugger;
+        var firstname= document.getElementById("f_name").value;
+        var Agee= document.getElementById("MyAge").value;
+        //var $ele = $(this).parent().parent();
+        var data={fname:firstname,age:Agee,store:'Update'}
+        $.ajax({
+    type:'POST',
+    url:'Update.php',
+    data:data,
+    success: function(response){
+        //  if(response.status=="success")
+        
+            $(".container").html(response);
+            alert(response);
+         },
+         error:function (xhr,status,error){
+              alert("error");
+        //     response.fadeOut().remove();
+        //  }else{
+        //      alert("can't delete the row")
+        //  }
+    
+    }
+
+     });
+     document.getElementById("f_name").value=null; 
+     document.getElementById("MyAge").value=null;
+    }
+
+         
 </script>
 <body>
 <center>
 
-    <h4>Enter the id to view the information</h4>
-    <input type="text" id="sId" placeholder="ID"><br>
-    <br> <button type="button" onclick="read()">view</button>
-    <!-- <button type="button">delete</button><br> -->
-    <div class="container"></div>
+    <h4>View the information</h4>
+     <button type="button" onclick="read()">view</button><br>
 
-       <br> first name: <input type="text" name="FirstName" id="f_name" >
+    <div class="container"></div>
+   <br> <input type="text" id="sId" placeholder="Name you want to delete"><br>
+   
+    <br><button type="button" onclick="deletes()">delete</button><br>
+    <!-- <div class="container"></div> -->
+
+    <br><input type="text" name="FirstName" id="f_name" placeholder="name">
+    <input type="text" name="age" id="MyAge"  placeholder="age"><br>
+    <br> <button type="button" onclick="update()">update</button><br>
+
+
+       <br> first name: <input type="text" name="FirstName" id="fname" >
         last name: <input type="text" name="LastName" id="l_name" >
         midle name: <input type="text" name="MiddleName" id="m_name">
-        age: <input type="text" name="age" id="MyAge" ><br> 
+        age: <input type="text" name="age" id="MAge" ><br> 
 </center><br>
        
 <div>
