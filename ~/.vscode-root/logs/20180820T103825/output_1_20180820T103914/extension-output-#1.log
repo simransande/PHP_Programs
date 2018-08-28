@@ -1,0 +1,115 @@
+Looking for git in: git
+Using git 1.9.1 from git
+> git rev-parse --show-toplevel
+> git config --get commit.template
+Open repository: /var/www/html
+> git status -z -u
+> git show :DesignPatterns/Factory.php
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git check-ignore -z --stdin
+> git show :DesignPatterns/Factory.php
+> git show :DesignPatterns/Visitor.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :DesignPatterns/Visitor.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :DesignPatterns/Obserever.php
+> git show :DesignPatterns/Singleton.php
+> git show :DesignPatterns/FactoryCars.php
+> git show :DesignPatterns/Factory.php
+> git show :DesignPatterns/FactoryCars.php
+> git show :DesignPatterns/Factory.php
+> git show :DesignPatterns/FactoryCars.php
+> git show :DesignPatterns/Factory.php
+> git show :DesignPatterns/FactoryCars.php
+> git show :DesignPatterns/Adapter.php
+> git show :DesignPatterns/Prototype.php
+> git show :DesignPatterns/Adapter.php
+> git show :DesignPatterns/Facade.php
+> git show :DesignPatterns/Proxy.php
+> git show :DesignPatterns/Obserever.php
+> git show :DesignPatterns/Visitor.php
+> git show :DesignPatterns/Singleton.php
+> git show :DesignPatterns/Obserever.php
+> git show :DesignPatterns/Visitor.php
+> git show :DesignPatterns/Factory.php
+> git show :DesignPatterns/FactoryCars.php
+> git show :DesignPatterns/Factory.php
+> git show :DesignPatterns/FactoryCars.php
+> git show :DesignPatterns/Factory.php
+> git show :DesignPatterns/FactoryCars.php
+> git show :DesignPatterns/Factory.php
+> git show :DesignPatterns/Visitor.php
+> git show :DesignPatterns/Singleton.php
+> git check-ignore -z --stdin
+> git show :DesignPatterns/Adapter.php
+> git show :DesignPatterns/Visitor.php
+> git show :DesignPatterns/Adapter.php
+> git check-ignore -z --stdin
+> git show :OOP/ComercialData.php
+> git show :DesignPatterns/Factory.php
+> git show :DesignPatterns/Prototype.php
+> git show :DesignPatterns/Facade.php
+> git show :DesignPatterns/Adapter.php
+> git show :DesignPatterns/Facade.php
+> git show :DesignPatterns/Adapter.php
+> git show :DesignPatterns/Facade.php
+> git show :DesignPatterns/Adapter.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :DesignPatterns/Adapter.php
+> git show :DesignPatterns/Proxy.php
+> git show :DesignPatterns/Visitor.php
+> git show :DesignPatterns/Adapter.php
+> git show :DesignPatterns/Facade.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :DesignPatterns/Facade.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :DesignPatterns/Adapter.php
+> git show :DesignPatterns/Visitor.php
+> git show :DesignPatterns/Facade.php
+> git show :DesignPatterns/Adapter.php
+> git show :DesignPatterns/Proxy.php
+> git show :DesignPatterns/Adapter.php
+> git show :DesignPatterns/Obserever.php
+> git show :DesignPatterns/Visitor.php

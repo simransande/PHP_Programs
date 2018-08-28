@@ -33,13 +33,13 @@ function canData()
     $sql = "INSERT INTO MyGuests (Fname,Lname,Mname,Age) VALUES('$x','$y','$z',$a)";
     echo $sql;
     // echo $x;
-    $x="";
-    // echo $x;
-$y="";
+//     $x="";
+//     // echo $x;
+// $y="";
 
-$z="";
+// $z="";
 
-$a="";
+// $a="";
 
 if (mysqli_query($conn, $sql)) {
     echo "New record created successfully";

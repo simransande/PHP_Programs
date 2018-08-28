@@ -24,6 +24,7 @@
            url:"candidate.php",
             data : data,          
            success: function(data,status,xhr){
+            $(".message").html(response);
                alert("success");
            },
            error:function (xhr,status,error){
@@ -39,13 +40,13 @@
     function read()
     {
         
-        var firstname= document.getElementById("sId").value;
+       // var firstname= document.getElementById("sId").value;
         var results="";
         //var data={fname:firstname,store:'canDataGet'};
         $.ajax({
             type:'GET',
             url:"View.php",
-            data:{firstname:firstname},
+            //data:{firstname:firstname},
             dataType: 'json',
 
             success: function(response){
@@ -56,10 +57,10 @@
              results+= "<div class='table-responsive'>";
              results+= "<table  class='table table-bordered table-striped'>";
              results+=  "<tr>" +
-                        "<th>first name</th>" +
-                        "<th>last name</th>" +
-                        "<th>middle name</th>" +
-                        "<th>age</th>" +
+                        "<th>First name</th>" +
+                        "<th>Middle name</th>" +
+                        "<th>Last name</th>" +
+                        "<th>Age</th>" +
                         "</tr>";
             $.each(response.data, function(key,data) {
                  results+='<tr><td>'+data.Fname+'</td><td>'+data.Lname+'</td><td>'+data.Mname+'</td><td>'+data.Age+'</td></tr>';
@@ -89,7 +90,7 @@
     success: function(response){
         //  if(response.status=="success")
         
-            $(".container").html(response);
+            $(".message").html(response);
             alert("done");
          },
          error:function (xhr,status,error){
@@ -121,7 +122,7 @@
     success: function(response){
         //  if(response.status=="success")
         
-            $(".container").html(response);
+            $(".message").html(response);
             alert(response);
          },
          error:function (xhr,status,error){
@@ -138,35 +139,55 @@
      document.getElementById("MyAge").value=null;
     }
 
+
+
          
 </script>
 <body>
 <center>
 
-    <h4>View the information</h4>
-     <button type="button" onclick="read()">view</button><br>
 
+    <h4>View the information</h4>
+    
+<!--     
+    <table>
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+        </tbody>
+      </table> -->
+      <script>read();</script>
+     <!-- <button type="button" onclick="read()">view</button><br> -->
+
+    <div class="message"></div>
     <div class="container"></div>
-   <br> <input type="text" id="sId" placeholder="Name you want to delete"><br>
+   <br> <input type="text" id="sId" placeholder="First you want to delete"><br>
    
-    <br><button type="button" onclick="deletes()">delete</button><br>
+    <br><button type="button" onclick="deletes();read();">delete</button><br>
     <!-- <div class="container"></div> -->
 
-    <br><input type="text" name="FirstName" id="f_name" placeholder="name">
+    <br><input type="text" name="FirstName" id="f_name" placeholder="FirstName">
     <input type="text" name="age" id="MyAge"  placeholder="age"><br>
-    <br> <button type="button" onclick="update()">update</button><br>
+    <br> <button type="button" onclick="update();read();">update</button><br>
 
 
-       <br> first name: <input type="text" name="FirstName" id="fname" >
-        last name: <input type="text" name="LastName" id="l_name" >
-        midle name: <input type="text" name="MiddleName" id="m_name">
+       <br> First name: <input type="text" name="FirstName" id="fname" >
+        Middle name: <input type="text" name="MiddleName" id="l_name" >
+        Last name: <input type="text" name="LastName" id="m_name">
         age: <input type="text" name="age" id="MAge" ><br> 
 </center><br>
        
 <div>
 
         <center>
- <button type="button" onclick="insert()">add</button>
+ <button type="button" onclick="insert();read();">add</button>
  
 
 </center>

@@ -1,9 +1,9 @@
 <?php
-if (isset($_GET['firstname'])) {
-    canDataGet($_GET['firstname']);
+if (isset($_GET)) {
+    canDataGet();
     
 }
-function canDataGet($firstname)
+function canDataGet()
 {
     $conn=new mysqli("localhost","root","root","MyGuests");//($servername, $username, $password, $dbname)
     if ($conn->connect_error) {
