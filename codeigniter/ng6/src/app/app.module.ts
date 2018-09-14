@@ -20,6 +20,8 @@ import { DataserviceService } from './service/dataservice.service';
 import { FundooNotesComponent } from './fundoo-notes/fundoo-notes.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
+import {MatSidenavModule} from '@angular/material/sidenav';
+
 
 
 
@@ -51,7 +53,8 @@ import {MatIconModule} from '@angular/material/icon';
     MatDividerModule,
     HttpClientModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    MatSidenavModule
   
   ],
   providers: [DataserviceService,HttpClientModule],

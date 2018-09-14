@@ -7,14 +7,14 @@
 <form>
   <div>
     <mat-form-field  class="login-full-width">
-        <input matInput placeholder="Email-id:"  [formControl]="MailIdFormControl">
+        <input matInput placeholder="Email-id:"  [formControl]="MailIdFormControl" [(ngModel)]="model.email">
         <mat-error *ngIf="MailIdFormControl.hasError('required')">
           Mail-id is required
         </mat-error>
     </mat-form-field >
 
     <mat-form-field  class="login-full-width">
-        <input matInput placeholder="Password:" type="password" [formControl]="PasswordFormControl">
+        <input matInput placeholder="Password:" type="password" [formControl]="PasswordFormControl" [(ngModel)]="model.pass">
         <mat-error *ngIf="PasswordFormControl.hasError('required')">
           Password is required
         </mat-error>
@@ -24,7 +24,7 @@
 
        <a href="" >Forgot Password?</a>  <!--to link the other site -->
   </div>
-     <button  class="login1-full-width" mat-button color>SIGN IN</button> 
+     <button  class="login1-full-width" mat-button color type="submit" (click)="onClickMe1()">SIGN IN</button> 
     <div align="center">
  <h4>or Sign in with:</h4>
  <img src="../../assets/icons8-facebook.svg">

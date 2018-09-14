@@ -463,6 +463,8 @@
     "openedPathsList": {
         "workspaces": [
             "/var/www/html/codeigniter",
+            "/var/www/html/codeigniter",
+            "/var/www/html/codeigniter",
             "/var/www/html/test_codeigniter",
             "/var/www/html/codeigniter/codeigniter",
             "/var/www/html",
@@ -475,14 +477,14 @@
     "windowsState": {
         "openedWindows": [],
         "lastActiveWindow": {
-            "folderPath": "/var/www/html/test_codeigniter",
-            "backupPath": "/var/www/html/~/.vscode-root/Backups/69a7c195803ca14ba555e0db6d191d1f",
+            "folderPath": "/var/www/html/codeigniter",
+            "backupPath": "/var/www/html/~/.vscode-root/Backups/61241a9750c12d55dffa6b07394bd19d",
             "uiState": {
                 "mode": 0,
-                "x": 60,
-                "y": 52,
-                "width": 1305,
-                "height": 715
+                "x": 59,
+                "y": 24,
+                "width": 1307,
+                "height": 744
             }
         }
     }

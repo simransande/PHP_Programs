@@ -22,3 +22,19 @@
 [2018-09-14 09:34:42.884] [exthost1] [info] ExtensionService#_doActivateExtension vscode.search-rg {"startup":true,"activationEvent":"*"}
 [2018-09-14 09:34:42.884] [exthost1] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/search-rg/out/extension
 [2018-09-14 09:34:42.889] [exthost1] [info] eager extensions activated
+[2018-09-14 09:42:14.776] [exthost1] [info] ExtensionService#_doActivateExtension vscode.css-language-features {"startup":false,"activationEvent":"onLanguage:css"}
+[2018-09-14 09:42:14.776] [exthost1] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/css-language-features/client/out/cssMain
+[2018-09-14 09:42:23.779] [exthost1] [info] ExtensionService#_doActivateExtension vscode.html-language-features {"startup":false,"activationEvent":"onLanguage:html"}
+[2018-09-14 09:42:23.779] [exthost1] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/html-language-features/client/out/htmlMain
+[2018-09-14 09:44:54.329] [exthost1] [info] ExtensionService#_doActivateExtension vscode.extension-editing {"startup":false,"activationEvent":"onLanguage:typescript"}
+[2018-09-14 09:44:54.329] [exthost1] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/extension-editing/out/extension
+[2018-09-14 09:44:54.409] [exthost1] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features {"startup":false,"activationEvent":"onLanguage:typescript"}
+[2018-09-14 09:44:54.409] [exthost1] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/typescript-language-features/out/extension
+[2018-09-14 09:45:01.291] [exthost1] [info] ExtensionService#_doActivateExtension vscode.configuration-editing {"startup":false,"activationEvent":"onLanguage:jsonc"}
+[2018-09-14 09:45:01.291] [exthost1] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/configuration-editing/out/extension
+[2018-09-14 09:45:01.327] [exthost1] [info] ExtensionService#_doActivateExtension vscode.json-language-features {"startup":false,"activationEvent":"onLanguage:jsonc"}
+[2018-09-14 09:45:01.327] [exthost1] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/json-language-features/client/out/jsonMain
+[2018-09-14 15:34:45.690] [exthost1] [info] ExtensionService#_doActivateExtension vscode.php-language-features {"startup":false,"activationEvent":"onLanguage:php"}
+[2018-09-14 15:34:45.690] [exthost1] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/php-language-features/out/phpMain
+[2018-09-14 15:34:45.796] [exthost1] [info] ExtensionService#_doActivateExtension kokororin.vscode-phpfmt {"startup":false,"activationEvent":"onLanguage:php"}
+[2018-09-14 15:34:45.796] [exthost1] [info] ExtensionService#loadCommonJSModule /home/bridgelabz/.vscode/extensions/kokororin.vscode-phpfmt-1.0.30/out/src/extension
