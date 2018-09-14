@@ -5,6 +5,64 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </head>
+
+<body>
+<center>
+
+
+    <h4>View the information</h4>
+    
+<!--     
+    <table>
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+        </tbody>
+      </table> -->
+      <!-- <script>read();</script> -->
+     <!-- <button type="button" onclick="read();">view</button><br> -->
+
+    <div class="message"></div>
+    <div class="container"></div>
+   <br> <input type="text" id="sId" placeholder="First you want to delete"><br>
+   
+    <br><button type="button" onclick="deletes();">delete</button><br>
+    <!-- <div class="container"></div> -->
+
+    <br><input type="text" name="FirstName" id="f_name" placeholder="FirstName">
+    <input type="text" name="age" id="MyAge"  placeholder="age"><br>
+    <br> <button type="button" onclick="update();">update</button><br>
+
+
+       <br> First name: <input type="text" name="FirstName" id="fname" >
+        Middle name: <input type="text" name="MiddleName" id="l_name" >
+        Last name: <input type="text" name="LastName" id="m_name">
+        age: <input type="text" name="age" id="MAge" ><br> 
+</center><br>
+       
+<div>
+
+        <center>
+ <button type="button" onclick="insert();">add</button>
+ 
+
+</center>
+</div>
+
+</body>
+<script>
+    $(document).ready(function(){
+        debugger;
+   read();
+});
+</script>
 <script>
 
 
@@ -12,7 +70,7 @@
     {
        
        console.log("inside insert");
-    //   debugger;
+      //debugger;
        var firstname= document.getElementById("fname").value;
        var lastname= document.getElementById("l_name").value;
        var middlename=document.getElementById("m_name").value;
@@ -23,9 +81,12 @@
            type:'POST',
            url:"candidate.php",
             data : data,          
-           success: function(data,status,xhr){
-            $(".message").html(response);
-               alert("success");
+           success: function(response)
+           {
+               //console.log(JSON.stringify(response));
+            // $(".message").html(response);
+            //    alert("success");
+               read();
            },
            error:function (xhr,status,error){
                alert("error");
@@ -39,7 +100,7 @@
     }
     function read()
     {
-        
+       // debugger;
        // var firstname= document.getElementById("sId").value;
         var results="";
         //var data={fname:firstname,store:'canDataGet'};
@@ -90,8 +151,9 @@
     success: function(response){
         //  if(response.status=="success")
         
-            $(".message").html(response);
-            alert("done");
+            // $(".message").html(response);
+            // alert("done");
+            read();
          },
          error:function (xhr,status,error){
               alert("error");
@@ -122,8 +184,9 @@
     success: function(response){
         //  if(response.status=="success")
         
-            $(".message").html(response);
-            alert(response);
+            // $(".message").html(response);
+            // alert(response);
+         read();
          },
          error:function (xhr,status,error){
               alert("error");
@@ -143,56 +206,5 @@
 
          
 </script>
-<body>
-<center>
-
-
-    <h4>View the information</h4>
-    
-<!--     
-    <table>
-        <thead>
-          <tr>
-            <th>Id</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Age</th>
-          </tr>
-        </thead>
-        <tbody>
-          
-        </tbody>
-      </table> -->
-      <script>read();</script>
-     <!-- <button type="button" onclick="read()">view</button><br> -->
-
-    <div class="message"></div>
-    <div class="container"></div>
-   <br> <input type="text" id="sId" placeholder="First you want to delete"><br>
-   
-    <br><button type="button" onclick="deletes();read();">delete</button><br>
-    <!-- <div class="container"></div> -->
-
-    <br><input type="text" name="FirstName" id="f_name" placeholder="FirstName">
-    <input type="text" name="age" id="MyAge"  placeholder="age"><br>
-    <br> <button type="button" onclick="update();read();">update</button><br>
-
-
-       <br> First name: <input type="text" name="FirstName" id="fname" >
-        Middle name: <input type="text" name="MiddleName" id="l_name" >
-        Last name: <input type="text" name="LastName" id="m_name">
-        age: <input type="text" name="age" id="MAge" ><br> 
-</center><br>
-       
-<div>
-
-        <center>
- <button type="button" onclick="insert();read();">add</button>
- 
-
-</center>
-</div>
-
-</body>
 
 </html>

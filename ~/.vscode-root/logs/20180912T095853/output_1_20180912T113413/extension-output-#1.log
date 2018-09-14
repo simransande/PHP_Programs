@@ -1,0 +1,45 @@
+Looking for git in: git
+Using git 1.9.1 from git
+> git rev-parse --show-toplevel
+> git config --get commit.template
+Open repository: /var/www/html
+> git status -z -u
+> git check-ignore -z --stdin
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :codeigniter/.htaccess
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git show :codeigniter/application/config/routes.php
+> git show :codeigniter/application/config/config.php
+> git check-ignore -z --stdin
+> git show :codeigniter/application/views/Register.php
+> git check-ignore -z --stdin
+> git show :codeigniter/application/controllers/Manage_Accounts.php
+> git show :codeigniter/application/config/routes.php
+> git show :codeigniter/application/controllers/Manage_Accounts.php
+> git show :codeigniter/application/views/Login.php
+> git show :codeigniter/application/views/Register.php
+> git show :codeigniter/application/views/Login.php
+> git show :codeigniter/.htaccess
+> git show :codeigniter/application/views/Register.php
+> git show :codeigniter/application/views/Login.php
+> git show :codeigniter/.htaccess
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :codeigniter/application/views/Login.php
+> git show :codeigniter/application/controllers/Manage_Accounts.php
+> git show :codeigniter/application/views/Login.php
+> git show :codeigniter/application/controllers/Manage_Accounts.php
+> git show :codeigniter/application/views/Login.php
+> git show :codeigniter/application/views/Register.php
+> git check-ignore -z --stdin

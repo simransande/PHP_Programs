@@ -459,11 +459,12 @@
     },
     "theme": "vs-dark vscode-theme-defaults-themes-dark_plus-json",
     "themeBackground": "#1e1e1e",
-    "pickerWorkingDir": "/var/www",
+    "pickerWorkingDir": "/var/www/html",
     "openedPathsList": {
         "workspaces": [
-            "/var/www/html",
-            "/var/www/html",
+            "/var/www/html/codeigniter",
+            "/var/www/html/test_codeigniter",
+            "/var/www/html/codeigniter/codeigniter",
             "/var/www/html",
             "/home/bridgelabz/go",
             "/var/www/html/Algorithm",
@@ -474,14 +475,14 @@
     "windowsState": {
         "openedWindows": [],
         "lastActiveWindow": {
-            "folderPath": "/var/www/html",
-            "backupPath": "/var/www/html/~/.vscode-root/Backups/40d1b2d83998fabacb726e5bc3d22129",
+            "folderPath": "/var/www/html/test_codeigniter",
+            "backupPath": "/var/www/html/~/.vscode-root/Backups/69a7c195803ca14ba555e0db6d191d1f",
             "uiState": {
                 "mode": 0,
-                "x": 59,
-                "y": 24,
-                "width": 1307,
-                "height": 744
+                "x": 60,
+                "y": 52,
+                "width": 1305,
+                "height": 715
             }
         }
     }

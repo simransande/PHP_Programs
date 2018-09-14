@@ -1,0 +1,32 @@
+<mat-toolbar class='toolbar'>
+    <button mat-icon-button (click)="snav.toggle()">
+        <img src="../../assets/menu1.svg" />
+      </button>
+      <span class="fundoo"> Fundoo</span> Notes
+      <!-- <span class="notes"> Notes</span> -->
+       <div class="search-bar">    
+          <button mat-icon-button class="search-button">
+             <img class="button" src="../../assets/search.svg" /> 
+          </button>
+             <input type="search" class="search" matInput placeholder="Search" />    
+      </div>
+
+      <div>
+          <button mat-icon-button>
+            <img class="refresh" src="../../assets/refresh.svg">
+            
+          </button>
+      </div>
+
+      <div>
+        <button mat-icon-button >
+            <img class="view" src="../../assets/viewList.svg">
+        </button>
+      </div>
+
+      <div>
+          <button mat-icon-button >
+              <img class="app" src="../../assets/app.svg">
+          </button>
+        </div>
+    </mat-toolbar>

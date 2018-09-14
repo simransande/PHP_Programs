@@ -8,15 +8,16 @@ class Add
         $this->a = $ax;
         $this->b  = $bx;
     }
-        function getA() {
+       public function getA() {
           return $this->a;
       }
-      function getB() {
+    public  function getB() {
           return $this->b;
       }
     
 }
-    class additionn {
+    class additionn 
+    {
       public static function inputInteger()
       {
           fscanf(STDIN,"%s",$num);
@@ -34,7 +35,7 @@ class Add
       function __construct(Add $Addition) {
           $this->add = $Addition;
       }
-      function getAandB() {
+    public  function getAandB() {
           return $this->add->getB()+$this->add->getA()."\n";
       }
   

@@ -8,8 +8,7 @@ function canData()
 {
    /**
     * @var string
-    * @range(0, 100)
-    * @label('first name')
+    * @range(0, 20)
     */
     $x=$_POST['fname'];
     /**
@@ -20,9 +19,12 @@ function canData()
     * @var string
     */
     $z=$_POST['mname'];
+
      /**
-    * @var int
-    */
+      * @Inject
+      * @var int
+      *@range(0,100)
+      */
     $a=$_POST['age'];
 
     $conn=new mysqli("localhost","root","root","MyGuests");//($servername, $username, $password, $dbname)
