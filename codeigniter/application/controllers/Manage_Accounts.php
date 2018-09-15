@@ -12,11 +12,51 @@ class Manage_Accounts extends CI_Controller
     }
     public function register()
     {
+
+        $name=$_POST['username'];
+       $pass=$_POST['password'];
+       $mail=$_POST['email']; 
+       $phone=$_POST['phone'];
+
+       $conn=new mysqli("localhost","root","root","fundooNotes");//($servername, $username, $password, $dbname)
+       if ($conn->connect_error) {
+          
+           die("Connection failed: " . $conn->connect_error);
+       }    
+        $sql = "INSERT INTO user(uname,email,password,phone) VALUES('$name','$mail','$pass',$phone)";
+       echo $sql;
+   if (mysqli_query($conn, $sql)) {
+       echo "New record created successfully";
+   } else {
+       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+   }
         $this->load->view('Register');
     }
 
+
     public function login()
     {
+        //$login=$_POST;
+        $mail=$_POST['email']; 
+        $pass=$_POST['password'];
+    
+        $conn=new mysqli("localhost","root","root","fundooNotes");//($servername, $username, $password, $dbname)
+        if ($conn->connect_error) {
+           
+            die("Connection failed: " . $conn->connect_error);
+        }    
+         $sql = "SELECT * From user where email='$mail' and password='$pass'";
+        //echo $sql;
+        $result = mysqli_query($conn, $sql);
+        //echo $result;
+    if ($result->num_rows>=1) {
+        echo "record found successfully";
+        // include 'test.html';
+        
+    } else {
+        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
         $this->load->view('Login');
     }
+
 }

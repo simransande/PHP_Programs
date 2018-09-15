@@ -29,8 +29,8 @@ export class RegistrationComponent implements OnInit {
   ]);
   PasswordFormControl=new FormControl('',[
     Validators.required,
-    Validators.minLength(8),
-    Validators.maxLength(14)
+    Validators.minLength(4),
+    Validators.maxLength(8)
   ]);
   PhoneFormControl=new FormControl('',[
     Validators.required,
@@ -46,7 +46,7 @@ export class RegistrationComponent implements OnInit {
 //debugger;
   //}
   onClickMe() {
-    debugger;
+    //debugger;
     this.model;
 
 
@@ -62,12 +62,13 @@ export class RegistrationComponent implements OnInit {
         error => this.handleResponse(error)
       );
   }
-
+ 
   handleResponse(response) {
+   // debugger;
     if (response.success) {
-      console.log("success");
+      //console.log("success");
     } else if (response.error) {
-      console.log("errror");
+     // console.log("errror");
     } else {
 
     }

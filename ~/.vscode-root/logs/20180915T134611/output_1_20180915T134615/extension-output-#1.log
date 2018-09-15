@@ -1,0 +1,725 @@
+Looking for git in: git
+Using git 1.9.1 from git
+> git rev-parse --show-toplevel
+> git config --get commit.template
+Open repository: /var/www/html/codeigniter
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :ng6/src/app/registration/registration.component.ts
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git show :ng6/src/app/login/login.component.ts
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :ng6/src/app/registration/registration.component.html
+> git show :ng6/src/app/service/dataservice.service.ts
+> git show :ng6/src/app/registration/registration.component.ts
+> git show :ng6/src/app/service/dataservice.service.ts
+> git show :ng6/src/app/registration/registration.component.ts
+> git show :ng6/src/app/service/dataservice.service.ts
+> git show :ng6/src/app/registration/registration.component.ts
+> git show :ng6/src/app/service/dataservice.service.ts
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git show :application/controllers/Main.php
+> git show :application/controllers/Manage_Accounts.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :ng6/src/app/service/dataservice.service.ts
+> git check-ignore -z --stdin
+> git show :application/controllers/Main.php
+> git show :application/controllers/Manage_Accounts.php
+> git show :ng6/src/app/registration/registration.component.ts
+> git show :ng6/src/app/registration/registration.component.html
+> git show :ng6/src/app/registration/registration.component.ts
+> git check-ignore -z --stdin
+> git show :application/views/Data_view.php
+> git show :application/views/Manage_Accounts.php
+> git check-ignore -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git check-ignore -z --stdin
+> git show :application/models/Data_model.php
+> git show :application/models/Manage_Accounts.php
+> git check-ignore -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :application/models/Login_and_registeration.php
+> git show :application/models/Manage_Accounts.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :application/views/Manage_Accounts.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :ng6/src/app/registration/registration.component.ts
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :application/views/Manage_Accounts.php
+> git show :application/models/Manage_Accounts.php
+> git show :application/models/Data_model.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :application/views/Manage_Accounts.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :ng6/src/app/registration/registration.component.ts
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git check-ignore -z --stdin
+> git show :application/controllers/Manage_Accounts.php
+> git show :application/.htaccess
+> git show :ng6/src/app/registration/registration.component.ts
+> git check-ignore -z --stdin
+> git show :application/config/constants.php
+> git show :application/config/database.php
+> git show :application/config/routes.php
+> git show :application/controllers/Main.php
+> git show :application/controllers/Manage_Accounts.php
+> git show :application/views/Manage_Accounts.php
+> git show :application/controllers/Manage_Accounts.php
+> git show :application/models/index.html
+> git show :application/models/Data_model.php
+> git show :application/controllers/Manage_Accounts.php
+> git show :application/views/Manage_Accounts.php
+> git show :application/models/Data_model.php
+> git show :ng6/src/app/service/dataservice.service.ts
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :application/controllers/Manage_Accounts.php
+> git show :ng6/src/app/service/dataservice.service.ts
+> git show :application/models/index.html
+> git show :application/controllers/Manage_Accounts.php
+> git show :application/models/Data_model.php
+> git show :application/views/Manage_Accounts.php
+> git show :ng6/src/app/registration/registration.component.ts
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :application/controllers/Manage_Accounts.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :ng6/src/app/registration/registration.component.ts
+> git show :ng6/src/app/service/dataservice.service.ts
+> git show :ng6/src/app/registration/registration.component.ts
+> git show :application/views/Manage_Accounts.php
+> git show :application/models/Data_model.php
+> git show :application/controllers/Manage_Accounts.php
+> git show :application/models/index.html
+> git show :application/controllers/Manage_Accounts.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :application/controllers/index.html
+> git show :application/controllers/Manage_Accounts.php
+> git show :application/controllers/test.html
+> git check-ignore -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :application/controllers/Manage_Accounts.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :ng6/src/app/login/login.component.css
+> git show :ng6/src/app/login/login.component.ts
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :ng6/src/app/fundoo-notes/fundoo-notes.component.ts
+> git show :ng6/src/app/fundoo-notes/fundoo-notes.component.css
+> git show :ng6/src/app/registration/registration.component.ts
+> git show :ng6/src/app/login/login.component.ts
+> git show :ng6/src/app/login/login.component.html
+> git show :application/views/Login.php
+> git show :application/views/Manage_Accounts.php
+> git show :application/controllers/Manage_Accounts.php
+> git show :system/core/Benchmark.php
+> git check-ignore -z --stdin
+> git show :system/core/CodeIgniter.php
+> git check-ignore -z --stdin
+> git show :system/core/Hooks.php
+> git check-ignore -z --stdin
+> git show :system/core/CodeIgniter.php
+> git show :system/core/Common.php
+> git show :application/controllers/Manage_Accounts.php
+> git show :system/core/Common.php
+> git show :application/controllers/Manage_Accounts.php
+> git show :system/core/Loader.php
+> git check-ignore -z --stdin
+> git show :application/views/Manage_Accounts.php
+> git show :application/controllers/Manage_Accounts.php
+> git show :application/controllers/Main.php
+> git show :application/controllers/Manage_Accounts.php
+> git show :ng6/src/app/service/dataservice.service.ts
+> git show :ng6/src/app/registration/registration.component.ts
+> git show :ng6/src/app/service/dataservice.service.ts
+> git show :ng6/src/app/registration/registration.component.ts
+> git show :ng6/src/app/service/dataservice.service.ts
+> git show :ng6/src/app/registration/registration.component.ts
+> git show :ng6/src/app/service/dataservice.service.ts
+> git show :application/controllers/Manage_Accounts.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :system/core/CodeIgniter.php
+> git show :application/views/Manage_Accounts.php
+> git show :application/controllers/Manage_Accounts.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :ng6/src/app/login/login.component.ts
+> git show :application/controllers/Manage_Accounts.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :system/core/CodeIgniter.php
+> git check-ignore -z --stdin
+> git show :application/controllers/Manage_Accounts.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :system/core/CodeIgniter.php
+> git show :ng6/src/app/registration/registration.component.html
+> git show :ng6/src/app/registration/registration.component.ts
+> git show :application/controllers/Main.php
+> git show :application/controllers/Manage_Accounts.php
+> git show :application/controllers/test.html
+> git show :application/controllers/Manage_Accounts.php
+> git show :ng6/src/app/login/login.component.ts
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :application/controllers/Manage_Accounts.php
+> git show :system/core/Common.php
+> git show :application/controllers/Manage_Accounts.php
+> git show :ng6/src/app/login/login.component.ts
+> git show :application/controllers/Manage_Accounts.php
+> git show :ng6/src/app/service/dataservice.service.ts
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :ng6/src/app/registration/registration.component.ts
+> git show :ng6/src/app/login/login.component.ts
+> git show :ng6/src/app/login/login.component.spec.ts
+> git show :ng6/src/app/login/login.component.html
+> git show :application/controllers/Manage_Accounts.php
+> git show :ng6/src/app/service/dataservice.service.ts
+> git show :ng6/src/app/login/login.component.ts
+> git show :ng6/src/app/login/login.component.html
+> git show :ng6/src/app/login/login.component.ts
+> git show :ng6/src/app/service/dataservice.service.ts
+> git show :ng6/src/app/login/login.component.ts
+> git show :ng6/src/app/service/dataservice.service.ts
+> git show :ng6/src/app/login/login.component.ts
+> git show :ng6/src/app/service/dataservice.service.ts
+> git show :application/controllers/Manage_Accounts.php
+> git show :ng6/src/app/login/login.component.ts
+> git show :application/controllers/Manage_Accounts.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :ng6/src/app/service/dataservice.service.ts
+> git show :ng6/src/app/registration/registration.component.ts
+> git show :ng6/src/app/service/dataservice.service.ts
+> git show :application/controllers/Manage_Accounts.php
+> git check-ignore -z --stdin
+> git show :ng6/src/app/login/login.component.html
+> git show :ng6/src/app/login/login.component.ts
+> git show :ng6/src/app/service/dataservice.service.ts
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :ng6/src/app/forgot-password/forgot-password.component.html
+> git show :ng6/src/app/login/login.component.html
+> git show :ng6/src/app/login/login.component.css
+> git show :ng6/src/app/login/login.component.html
+> git show :ng6/src/app/forgot-password/forgot-password.component.html
+> git show :ng6/src/app/login/login.component.html
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :ng6/src/app/forgot-password/forgot-password.component.html
+> git show :ng6/src/app/login/login.component.html
+> git show :ng6/src/app/registration/registration.component.html
+> git show :ng6/src/app/forgot-password/forgot-password.component.html
+> git show :ng6/src/app/registration/registration.component.html
+> git show :ng6/src/app/forgot-password/forgot-password.component.html
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :ng6/src/app/forgot-password/forgot-password.component.css
+> git show :ng6/src/app/fundoo-notes/fundoo-notes.component.css
+> git show :ng6/src/app/fundoo-notes/fundoo-notes.component.html
+> git show :ng6/src/app/forgot-password/forgot-password.component.spec.ts
+> git show :ng6/src/app/forgot-password/forgot-password.component.css
+> git show :ng6/src/app/forgot-password/forgot-password.component.html
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :ng6/src/app/forgot-password/forgot-password.component.css
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :ng6/src/app/forgot-password/forgot-password.component.ts
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :ng6/src/app/app.module.ts
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :ng6/src/app/forgot-password/forgot-password.component.html
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :application/config/config.php
+> git show :application/config/routes.php
+> git show :ng6/src/app/app.module.ts
+> git show :ng6/src/app/app-routing.module.ts
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :ng6/src/app/forgot-password/forgot-password.component.html
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :ng6/src/app/login/login.component.html
+> git show :ng6/src/app/forgot-password/forgot-password.component.html
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :ng6/src/app/login/login.component.html
+> git show :ng6/src/app/forgot-password/forgot-password.component.html
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :ng6/src/app/fundoo-notes/fundoo-notes.component.html
+> git show :ng6/src/app/forgot-password/forgot-password.component.html
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :ng6/src/app/fundoo-notes/fundoo-notes.component.html
+> git show :ng6/src/app/forgot-password/forgot-password.component.html
+> git show :ng6/src/app/forgot-password/forgot-password.component.css
+> git show :ng6/src/app/forgot-password/forgot-password.component.html
+> git show :ng6/src/app/forgot-password/forgot-password.component.css
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :ng6/src/app/forgot-password/forgot-password.component.html
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :ng6/src/app/registration/registration.component.html
+> git show :ng6/src/app/forgot-password/forgot-password.component.html
+> git show :ng6/src/app/login/login.component.html
+> git show :ng6/src/app/registration/registration.component.html
+> git show :ng6/src/app/forgot-password/forgot-password.component.html
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :ng6/src/app/registration/registration.component.html
+> git show :ng6/src/app/forgot-password/forgot-password.component.html
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :ng6/src/app/forgot-password/forgot-password.component.css
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :ng6/src/app/forgot-password/forgot-password.component.html
+> git show :ng6/src/app/registration/registration.component.html
+> git show :ng6/src/app/login/login.component.html
+> git show :ng6/src/app/forgot-password/forgot-password.component.css
+> git show :ng6/src/app/registration/registration.component.html
+> git show :ng6/src/app/registration/registration.component.css
+> git show :ng6/src/app/forgot-password/forgot-password.component.html
+> git show :ng6/src/app/forgot-password/forgot-password.component.css
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :ng6/src/app/login/login.component.html
+> git show :ng6/src/app/forgot-password/forgot-password.component.html
+> git show :ng6/src/app/login/login.component.html
+> git show :ng6/src/app/forgot-password/forgot-password.component.html
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :ng6/src/app/login/login.component.html
+> git show :ng6/src/app/login/login.component.css
+> git show :ng6/src/app/forgot-password/forgot-password.component.html
+> git show :ng6/src/app/forgot-password/forgot-password.component.css
+> git show :ng6/src/app/login/login.component.html
+> git show :ng6/src/app/forgot-password/forgot-password.component.html
+> git show :ng6/src/app/forgot-password/forgot-password.component.css
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :ng6/src/app/forgot-password/forgot-password.component.html
+> git show :ng6/src/app/forgot-password/forgot-password.component.css
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :ng6/src/app/login/login.component.html
+> git show :ng6/src/app/login/login.component.css
+> git show :ng6/src/app/login/login.component.html
+> git show :ng6/src/app/login/login.component.css
+> git show :ng6/src/app/forgot-password/forgot-password.component.css
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :ng6/src/app/login/login.component.html

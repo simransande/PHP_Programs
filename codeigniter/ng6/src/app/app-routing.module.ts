@@ -4,6 +4,8 @@ import { RouterModule, Routes } from '@angular/router';
 import{RegistrationComponent} from './registration/registration.component';
 import { LoginComponent} from './login/login.component';
 import { FundooNotesComponent } from './fundoo-notes/fundoo-notes.component';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+
 
 
 @NgModule({
@@ -15,6 +17,7 @@ import { FundooNotesComponent } from './fundoo-notes/fundoo-notes.component';
       { path: 'registration', component: RegistrationComponent },
       { path: 'login', component: LoginComponent },
       { path: 'fundoo-notes', component: FundooNotesComponent },
+      { path: 'forgot-password', component: ForgotPasswordComponent }
 
 
     ])

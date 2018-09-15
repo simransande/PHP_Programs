@@ -21,6 +21,8 @@ import { FundooNotesComponent } from './fundoo-notes/fundoo-notes.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+
 
 
 
@@ -33,8 +35,8 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 
     LoginComponent,
     RegistrationComponent,
-    FundooNotesComponent
-    //ConstantsComponent
+    FundooNotesComponent,
+    ForgotPasswordComponent
     
     
   ],

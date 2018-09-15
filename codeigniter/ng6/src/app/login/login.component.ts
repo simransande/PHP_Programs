@@ -21,11 +21,11 @@ export class LoginComponent implements OnInit {
   ]);
   PasswordFormControl=new FormControl('',[
     Validators.required,
-    Validators.minLength(8),
-    Validators.maxLength(14)
+    Validators.minLength(4),
+    Validators.maxLength(8)
   ]);
   onClickMe1() {
-    debugger;
+    //debugger;
     this.model;
 
 
@@ -44,9 +44,9 @@ export class LoginComponent implements OnInit {
 
   handleResponse(response) {
     if (response.success) {
-      console.log("success");
+     // console.log("success");
     } else if (response.error) {
-      console.log("errror");
+      //console.log("errror");
     } else {
 
     }

@@ -53,7 +53,7 @@ private _contactUrl1='http://localhost:8080/login';
     // }
 
     Register(value: any): Observable<{}> {
-      debugger;
+     // debugger;
       let body = new FormData();
       body.append('username', value.data[0].username);
       body.append('password', value.data[0].password);
@@ -79,7 +79,7 @@ private _contactUrl1='http://localhost:8080/login';
      Login(value: any): Observable<{}> {
        debugger;
        let body1 = new FormData();
-       body1.append('username', value.data[0].username);
+       body1.append('email', value.data[0].email);
        body1.append('password', value.data[0].password);
        let otheroption: any = {
          'Content-Type': 'application/x-www-form-urlencoded'
