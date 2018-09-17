@@ -1,0 +1,120 @@
+  .note-container {
+   position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .note-content {
+    background-color: #e8e8e8;
+  }
+  .note-card {
+    width: 500px;
+    margin-top: 90px;
+    margin-left: 510px;
+     padding: 10px
+  }
+  .noteinput {
+    font-size:initial;
+    border: none;
+    outline: none;
+    width: 500px;
+    size: small;
+  }
+  .note-card1 {
+    width: 500px;
+    margin-top: 90px;
+    margin-left: 510px;
+    padding: 10px
+  }
+  .noteinput1{
+    border: none;
+    outline: none;
+    width: 500px;
+    style:bold;
+  }
+  .noteContain{
+    border: none;
+    outline: none;
+    width: 500px;
+    font-size:initial;
+    padding-top: 35px;
+ 
+  }
+  .note-reminder{
+    margin-left: 2px;
+    margin-top: 10px;
+    padding-top: 10px;
+  
+  }
+
+.reminder{
+    opacity: 0.5;
+    height: 24px;
+    width: 24px;
+    margin-bottom: 12px;
+}
+  /* .imageset {
+    display: flex;
+    opacity: 0.5;
+  }
+  
+  .fundoo33 {
+    margin-left: 10px;
+    opacity: 0.5;
+  }
+  
+  
+  
+  .titleinput {
+    border: none;
+    outline: none;
+    font-weight: bold;
+    font-size: large;
+    margin-bottom: 16px;
+  }
+  .search1 {
+    border: none;
+    outline: none;
+  }
+  
+  .noteinput {
+    border: none;
+    outline: none;
+    width: 448px;
+    font-size:initial;
+  }
+  
+  .fundoo-card1 {
+    width: 564px;
+    margin-top: 37px;
+    margin-left: 298px;
+    height: 105px;
+  }
+  
+  .fundoo-card-content {
+    font-size: small;
+    line-height: 2px;
+  }
+  
+  .button-display {
+    display: flex;
+    margin-left: -15px;
+    margin-right: 10px;
+  }
+  
+  #searchid {
+    margin-bottom: 17px;
+  }
+  
+  .closebtn {
+    margin-left: 96px;
+  }
+  
+  .content {
+    position: absolute;
+    top: 60px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  } */

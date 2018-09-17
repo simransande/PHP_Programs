@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./fundoo-notes.component.css']
 })
 export class FundooNotesComponent implements OnInit {
-
+ 
   constructor() { }
 
   ngOnInit() {

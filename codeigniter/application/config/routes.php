@@ -59,3 +59,4 @@ $route['default_controller'] = 'Manage_Accounts';
 $route['admin'] = 'Manage_Accounts';
 $route['login'] = 'Manage_Accounts/login';
 $route['register'] = 'Manage_Accounts/register';
+$route['forgotpassword'] = 'Manage_Accounts/forgotpassword';

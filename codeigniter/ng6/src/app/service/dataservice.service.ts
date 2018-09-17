@@ -11,6 +11,8 @@ import { Observable } from 'rxjs';
 export class DataserviceService {
 private _contactUrl = 'http://localhost:8080/register';
 private _contactUrl1='http://localhost:8080/login';
+private _contactUrl2='http://localhost:8080/forgotpassword';
+
   // private host = window.location.hostname;
   // private headers = new Headers({'Content-Type': 'application/json'});
   // private usersURL = `http://${this.host}/api/v1/users`;
@@ -77,7 +79,7 @@ private _contactUrl1='http://localhost:8080/login';
 
 
      Login(value: any): Observable<{}> {
-       debugger;
+     //  debugger;
        let body1 = new FormData();
        body1.append('email', value.data[0].email);
        body1.append('password', value.data[0].password);
@@ -88,6 +90,17 @@ private _contactUrl1='http://localhost:8080/login';
        //alert(data);
        //});
      }
+     ForgotPass(value: any): Observable<{}> {
+     // debugger;
+      let body2 = new FormData();
+      body2.append('email', value.data[0].email);
+      let otheroption: any = {
+        'Content-Type': 'application/x-www-form-urlencoded'
+      }
+    return this.http.post(this._contactUrl2, body2, otheroption);//.subscribe(data => {
+      //alert(data);
+      //});
+    }
 
    }
   
