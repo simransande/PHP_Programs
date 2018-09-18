@@ -41,6 +41,11 @@
             "label": "Ctrl+,",
             "isNative": true
         },
+        "workbench.view.extensions": {
+            "id": "workbench.view.extensions",
+            "label": "Ctrl+Shift+X",
+            "isNative": true
+        },
         "workbench.action.openGlobalKeybindings": {
             "id": "workbench.action.openGlobalKeybindings",
             "label": "Ctrl+K Ctrl+S",
@@ -226,11 +231,6 @@
             "label": "Ctrl+Shift+D",
             "isNative": true
         },
-        "workbench.view.extensions": {
-            "id": "workbench.view.extensions",
-            "label": "Ctrl+Shift+X",
-            "isNative": true
-        },
         "workbench.action.output.toggleOutput": {
             "id": "workbench.action.output.toggleOutput",
             "label": "Ctrl+K Ctrl+H",
@@ -261,11 +261,6 @@
             "label": "Ctrl+K Z",
             "isNative": false
         },
-        "workbench.action.toggleEditorGroupLayout": {
-            "id": "workbench.action.toggleEditorGroupLayout",
-            "label": "Shift+Alt+0",
-            "isNative": true
-        },
         "workbench.action.toggleSidebarVisibility": {
             "id": "workbench.action.toggleSidebarVisibility",
             "label": "Ctrl+B",
@@ -274,11 +269,6 @@
         "workbench.action.togglePanel": {
             "id": "workbench.action.togglePanel",
             "label": "Ctrl+J",
-            "isNative": true
-        },
-        "editor.action.toggleWordWrap": {
-            "id": "editor.action.toggleWordWrap",
-            "label": "Alt+Z",
             "isNative": true
         },
         "workbench.action.zoomIn": {
@@ -295,6 +285,16 @@
             "id": "workbench.action.zoomReset",
             "label": "Ctrl+NumPad0",
             "isNative": false
+        },
+        "workbench.action.toggleEditorGroupLayout": {
+            "id": "workbench.action.toggleEditorGroupLayout",
+            "label": "Shift+Alt+0",
+            "isNative": true
+        },
+        "editor.action.toggleWordWrap": {
+            "id": "editor.action.toggleWordWrap",
+            "label": "Alt+Z",
+            "isNative": true
         },
         "workbench.action.navigateBack": {
             "id": "workbench.action.navigateBack",
@@ -451,28 +451,36 @@
             "label": "Shift+F9",
             "isNative": true
         },
+        "workbench.action.terminal.new": {
+            "id": "workbench.action.terminal.new",
+            "label": "Ctrl+Shift+`",
+            "isNative": true
+        },
+        "workbench.action.terminal.split": {
+            "id": "workbench.action.terminal.split",
+            "label": "Ctrl+\\",
+            "isNative": true
+        },
         "workbench.action.tasks.build": {
             "id": "workbench.action.tasks.build",
             "label": "Ctrl+Shift+B",
             "isNative": true
         }
     },
-    "theme": "vs-dark vscode-theme-defaults-themes-dark_plus-json",
+    "theme": "vs-dark",
     "themeBackground": "#1e1e1e",
     "pickerWorkingDir": "/var/www/html",
     "openedPathsList": {
-        "workspaces": [
-            "/var/www/html/codeigniter",
-            "/var/www/html/codeigniter",
-            "/var/www/html/codeigniter",
-            "/var/www/html/test_codeigniter",
-            "/var/www/html/codeigniter/codeigniter",
-            "/var/www/html",
-            "/home/bridgelabz/go",
-            "/var/www/html/Algorithm",
-            "/var/www/html/Functional"
+        "workspaces2": [
+            "file:///var/www/html/codeigniter",
+            "file:///var/www/html/test_codeigniter",
+            "file:///var/www/html/codeigniter/codeigniter",
+            "file:///var/www/html",
+            "file:///home/bridgelabz/go",
+            "file:///var/www/html/Algorithm",
+            "file:///var/www/html/Functional"
         ],
-        "files": []
+        "files2": []
     },
     "windowsState": {
         "openedWindows": [],
@@ -485,6 +493,12 @@
                 "y": 24,
                 "width": 1307,
                 "height": 744
+            },
+            "folderUri": {
+                "$mid": 1,
+                "fsPath": "/var/www/html/codeigniter",
+                "path": "/var/www/html/codeigniter",
+                "scheme": "file"
             }
         }
     }

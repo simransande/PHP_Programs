@@ -9,14 +9,51 @@
       <mat-card class="note-card1" *ngIf="createCard">
           <mat-card-content>
 
-        <input class="noteinput1" placeholder="Title"  />
+        <div class="pin1"><input class="noteinput1" placeholder="Title"/> 
+        <button mat-icon-button class="note-pin">
+          <img class="pin" src="../../assets/pin.svg">
+        </button>
+      </div>
         <input class="noteContain" placeholder="Take a note..."/>
-        <div>
-            <button mat-icon-button class="note-reminder"  aria-label="refresh">
+        <div class="menu">
+            <button mat-icon-button class="note-reminder">
                 <img class="reminder" src="../../assets/reminder.svg">
-                
-              </button>
-        </div>
+            </button>
+       
+
+          <button mat-icon-button class="note-collaborator">
+              <img class="collaborator" src="../../assets/baseline-person_add-24px.svg">
+          </button>
+
+          <button mat-icon-button class="note-color">
+              <img class="color" src="../../assets/baseline-color_lens-24px.svg">
+          </button>
+
+          <button mat-icon-button class="note-addPerson">
+              <img class="addPerson" src="../../assets/baseline-person_add-24px.svg">
+          </button>
+
+          <button mat-icon-button class="note-archive">
+              <img class="archive" src="../../assets/archive.svg">
+          </button>
+
+          <button mat-icon-button class="note-menuBotton">
+              <img class="menuBotton" src="../../assets/baseline-more_vert-24px.svg">
+          </button>
+          
+          <button mat-icon-button class="note-undo" aria-label="Undo" aria-disabled="false" tabindex="0">
+              <img class="undo" src="../../assets/baseline-undo-24px.svg">
+          </button>
+
+          <button mat-icon-button class="note-redo">
+            <img class="redo" src="../../assets/baseline-redo-24px.svg">
+          </button>
+
+          <button mat-button class="close" (click)="showHideImp()">CLOSE</button>
+
+        
+
+      </div>
         </mat-card-content>
 
       </mat-card>
@@ -25,40 +62,9 @@
 
 
   
-      <!-- <mat-card class="fundoo-card1" *ngIf="createCard">
-        <input placeholder="Title" class="titleinput" [(ngModel)]="model.title">
-        <br>
-        <input class="noteinput" id="searchid" placeholder="Take a note...."  [(ngModel)]="model.note"/>
-  
-        <div class="button-display">
-          <button mat-icon-button class="fundoo33">
-            <img src="../../assets/image/Remainder.svg" />
-          </button>
-          <button mat-icon-button class="fundoo33">
-            <img src="../../assets/image/baseline-person_add-24px.svg" />
-          </button>
-          <button mat-icon-button class="fundoo33">
-            <img src="../../assets/image/baseline-color_lens-24px.svg" />
-          </button>
-          <button mat-icon-button class="fundoo33">
-            <img src="../../assets/image/baseline-photo-24px.svg" />
-          </button>
-          <button mat-icon-button class="fundoo33">
-            <img src="../../assets/image/Archieve.svg" />
-          </button>
-          <button mat-icon-button class="fundoo33">
-            <img src="../../assets/image/baseline-more_vert-24px.svg" />
-          </button>
-          <button mat-icon-button class="fundoo33">
-            <img src="../../assets/image/baseline-undo-24px.svg" />
-          </button>
-          <button mat-icon-button class="fundoo33">
-            <img src="../../assets/image/baseline-redo-24px.svg" />
-          </button>
-  
-          <button mat-button class="closebtn" (click)="showHideImp()" >CLOSE</button>
+          <!-- <button mat-button class="closebtn" (click)="showHideImp()" >CLOSE</button>
         </div>
       </mat-card>
   
     </mat-sidenav-content>
-  </mat-sidenav-container> -->
+  </mat-sidenav-container>  -->

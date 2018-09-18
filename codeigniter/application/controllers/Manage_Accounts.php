@@ -14,29 +14,30 @@ class Manage_Accounts extends CI_Controller
     {
        
         $name=$_POST['username'];
-       $pass=$_POST['password'];
+       $hashed_password=$_POST['password'];
        $phone=$_POST['phone'];
-       $email=$_POST['email'];
-        $mail = test_input($email);
+       $mail=$_POST['email'];
+       $pass = crypt($hashed_password);
+       // $mail = test_input($email);
         // check if e-mail address is well-formed
         if (!filter_var($mail, FILTER_VALIDATE_EMAIL)) {
         echo "Invalid email format"; 
         }
    
         else{
-
-
        $conn=new mysqli("localhost","root","root","fundooNotes");//($servername, $username, $password, $dbname)
        if ($conn->connect_error) {
 
            die("Connection failed: " . $conn->connect_error);
+          
        }
-        else{
-       $duplicate="SELECT * From user where email='$mail'or username='$name'";
+        
+       $duplicate="SELECT * From user where email='$mail' and uname='$name'";
        
-       if(mysqli_num_rows($duplicate)>0)
+       $result=mysqli_query($conn, $duplicate);
+       if($result->num_rows>=1)
         {
-        header("Location: index.php?message=User name or Email id already exists.");
+        echo "User name or Email id already exists.";
         }
 
         else{
@@ -49,7 +50,7 @@ class Manage_Accounts extends CI_Controller
          {
        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
         }
-        }
+        
     }
     }
 }
@@ -71,6 +72,12 @@ class Manage_Accounts extends CI_Controller
         
         $mail=$_POST['email'];
        $pass=$_POST['password'];
+       $pass = crypt($pass1);
+    //    if (hash_equals($hashed_password, crypt($user_input, $hashed_password))) {
+    //     echo "Password verified!";
+    //  }
+
+
         //  $mail = test_input($_POST["email"]);
         //  if (filter_var($mail, FILTER_VALIDATE_EMAIL)) {
         //      $mail = "valid email format"; 
@@ -97,7 +104,10 @@ class Manage_Accounts extends CI_Controller
         $result = mysqli_query($conn, $sql);
         //echo $result;
     if ($result->num_rows>=1) {
+
         echo "record found successfully";
+        header("Location: http://localhost:4200/fundoo-notes", true, 301);
+exit();
         // include 'test.html';
         
 
