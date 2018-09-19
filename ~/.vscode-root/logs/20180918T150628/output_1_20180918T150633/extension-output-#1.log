@@ -16,3 +16,699 @@ fatal: No upstream configured for branch 'master'
 > git ls-files --stage -- ng6/src/app/fundoo-notes/
 > git show :ng6/src/app/notes/notes.component.html
 > git ls-files --stage -- ng6/src/app/notes/
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :ng6/src/app/fundoo-notes/fundoo-notes.component.html
+> git ls-files --stage -- ng6/src/app/fundoo-notes/
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git show :application/controllers/Manage_Accounts.php
+> git ls-files --stage -- application/controllers/
+> git show :application/controllers/Manage_Accounts.php
+> git status -z -u
+> git ls-files --stage -- application/controllers/
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :system/core/Common.php
+> git show :application/controllers/Manage_Accounts.php
+> git ls-files --stage -- application/controllers/
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :system/core/Common.php
+> git show :application/controllers/Manage_Accounts.php
+> git ls-files --stage -- application/controllers/
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git check-ignore -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :application/controllers/Main.php
+> git ls-files --stage -- application/controllers/
+> git show :application/controllers/Welcome.php
+> git ls-files --stage -- application/controllers/
+> git show :application/controllers/Manage_Accounts.php
+> git ls-files --stage -- application/controllers/
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git show :ng6/src/app/login/login.component.ts
+> git show :application/controllers/Manage_Accounts.php
+> git ls-files --stage -- application/controllers/
+> git show :ng6/src/app/service/dataservice.service.ts
+> git show :application/controllers/Manage_Accounts.php
+> git ls-files --stage -- application/controllers/
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :ng6/src/app/login/login.component.ts
+> git show :ng6/src/app/service/dataservice.service.ts
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :application/controllers/Manage_Accounts.php
+> git ls-files --stage -- application/controllers/
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :ng6/src/app/service/dataservice.service.ts
+> git show :ng6/src/app/login/login.component.ts
+> git show :application/controllers/Manage_Accounts.php
+> git ls-files --stage -- application/controllers/
+> git show :ng6/src/app/service/dataservice.service.ts
+> git show :application/controllers/Manage_Accounts.php
+> git ls-files --stage -- application/controllers/
+> git show :ng6/src/app/service/dataservice.service.ts
+> git show :application/controllers/Manage_Accounts.php
+> git ls-files --stage -- application/controllers/
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git check-ignore -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git show :application/controllers/test.html
+> git ls-files --stage -- application/controllers/
+> git show :application/controllers/Manage_Accounts.php
+> git ls-files --stage -- application/controllers/
+> git check-ignore -z --stdin
+> git show :ng6/src/app/ForgotPassword/ForgotPassword.component.ts
+> git show :ng6/src/app/service/dataservice.service.ts
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :application/controllers/Manage_Accounts.php
+> git ls-files --stage -- application/controllers/
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :application/controllers/orgot-password-recovery-mail.php
+> git ls-files --stage -- application/controllers/
+> git check-ignore -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :application/controllers/Manage_Accounts.php
+> git ls-files --stage -- application/controllers/
+> git show :application/controllers/orgot-password-recovery-mail.php
+> git ls-files --stage -- application/controllers/
+> git show :application/controllers/Manage_Accounts.php
+> git ls-files --stage -- application/controllers/
+> git show :application/controllers/orgot-password-recovery-mail.php
+> git ls-files --stage -- application/controllers/
+> git show :application/controllers/forgot-password-recovery-mail.php
+> git ls-files --stage -- application/controllers/
+> git check-ignore -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :application/controllers/Manage_Accounts.php
+> git ls-files --stage -- application/controllers/
+> git show :application/controllers/forgot-password-recovery-mail.php
+> git ls-files --stage -- application/controllers/
+> git show :application/controllers/mail_configuration.php
+> git ls-files --stage -- application/controllers/
+> git check-ignore -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :application/controllers/forgot-password-recovery-mail.php
+> git ls-files --stage -- application/controllers/
+> git show :application/controllers/Manage_Accounts.php
+> git ls-files --stage -- application/controllers/
+> git show :ng6/src/app/notes/notes.component.html
+> git show :application/controllers/Manage_Accounts.php
+> git ls-files --stage -- application/controllers/
+> git show :application/controllers/forgot-password-recovery-mail.php
+> git ls-files --stage -- application/controllers/
+> git show :ng6/src/app/ForgotPassword/ForgotPassword.component.ts
+> git show :application/controllers/Manage_Accounts.php
+> git ls-files --stage -- application/controllers/
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :application/controllers/forgot-password-recovery-mail.php
+> git ls-files --stage -- application/controllers/
+> git show :application/vendor/phpmailer/phpmailer/src/PHPMailer.php
+> git ls-files --stage -- application/vendor/phpmailer/phpmailer/src/
+> git show :application/controllers/forgot-password-recovery-mail.php
+> git ls-files --stage -- application/controllers/
+> git show :application/controllers/Manage_Accounts.php
+> git ls-files --stage -- application/controllers/
+> git show :application/controllers/forgot-password-recovery-mail.php
+> git ls-files --stage -- application/controllers/
+> git check-ignore -z --stdin
+> git show :application/controllers/Manage_Accounts.php
+> git ls-files --stage -- application/controllers/
+> git show :application/controllers/forgot-password-recovery-mail.php
+> git ls-files --stage -- application/controllers/
+> git show :system/core/Common.php
+> git check-ignore -z --stdin
+> git show :application/controllers/Manage_Accounts.php
+> git ls-files --stage -- application/controllers/
+> git show :application/controllers/forgot-password-recovery-mail.php
+> git ls-files --stage -- application/controllers/
+> git show :application/controllers/Manage_Accounts.php
+> git ls-files --stage -- application/controllers/
+> git show :application/controllers/forgot-password-recovery-mail.php
+> git ls-files --stage -- application/controllers/
+> git check-ignore -z --stdin
+> git show :application/vendor/phpmailer/phpmailer/src/PHPMailer.php
+> git ls-files --stage -- application/vendor/phpmailer/phpmailer/src/
+> git show :application/vendor/phpmailer/phpmailer/src/SMTP.php
+> git ls-files --stage -- application/vendor/phpmailer/phpmailer/src/
+> git show :application/vendor/phpmailer/phpmailer/src/POP3.php
+> git ls-files --stage -- application/vendor/phpmailer/phpmailer/src/
+> git show :application/vendor/phpmailer/phpmailer/src/PHPMailer.php
+> git ls-files --stage -- application/vendor/phpmailer/phpmailer/src/
+> git show :application/vendor/phpmailer/phpmailer/src/POP3.php
+> git ls-files --stage -- application/vendor/phpmailer/phpmailer/src/
+> git show :application/controllers/forgot-password-recovery-mail.php
+> git ls-files --stage -- application/controllers/
+> git show :application/controllers/Manage_Accounts.php
+> git ls-files --stage -- application/controllers/
+> git show :application/controllers/forgot-password-recovery-mail.php
+> git ls-files --stage -- application/controllers/
+> git show :application/vendor/phpmailer/phpmailer/src/PHPMailer.php
+> git ls-files --stage -- application/vendor/phpmailer/phpmailer/src/
+> git show :application/controllers/forgot-password-recovery-mail.php
+> git ls-files --stage -- application/controllers/
+> git show :application/controllers/Manage_Accounts.php
+> git ls-files --stage -- application/controllers/
+> git show :application/controllers/forgot-password-recovery-mail.php
+> git ls-files --stage -- application/controllers/
+> git show :application/vendor/phpmailer/phpmailer/src/PHPMailer.php
+> git ls-files --stage -- application/vendor/phpmailer/phpmailer/src/
+> git show :application/controllers/forgot-password-recovery-mail.php
+> git ls-files --stage -- application/controllers/
+> git show :ng6/src/app/notes/notes.component.html
+> git show :application/controllers/forgot-password-recovery-mail.php
+> git ls-files --stage -- application/controllers/
+> git show :application/vendor/phpmailer/phpmailer/src/SMTP.php
+> git ls-files --stage -- application/vendor/phpmailer/phpmailer/src/
+> git show :ng6/src/app/service/dataservice.service.ts
+> git show :ng6/src/app/service/dataservice.service.ts
+> git show :application/controllers/Manage_Accounts.php
+> git ls-files --stage -- application/controllers/
+> git show :application/controllers/forgot-password-recovery-mail.php
+> git ls-files --stage -- application/controllers/
+> git show :ng6/src/app/service/dataservice.service.ts
+> git show :application/controllers/forgot-password-recovery-mail.php
+> git ls-files --stage -- application/controllers/
+> git show :application/controllers/Manage_Accounts.php
+> git ls-files --stage -- application/controllers/
+> git show :application/controllers/forgot-password-recovery-mail.php
+> git ls-files --stage -- application/controllers/
+> git show :application/controllers/mail_configuration.php
+> git ls-files --stage -- application/controllers/
+> git show :application/controllers/forgot-password-recovery-mail.php
+> git ls-files --stage -- application/controllers/
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :application/controllers/mail_configuration.php
+> git ls-files --stage -- application/controllers/
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :application/controllers/forgot-password-recovery-mail.php
+> git ls-files --stage -- application/controllers/
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :application/controllers/Manage_Accounts.php
+> git ls-files --stage -- application/controllers/
+> git show :application/controllers/forgot-password-recovery-mail.php
+> git ls-files --stage -- application/controllers/
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :application/controllers/Manage_Accounts.php
+> git ls-files --stage -- application/controllers/
+> git show :application/controllers/forgot-password-recovery-mail.php
+> git ls-files --stage -- application/controllers/
+> git show :application/vendor/phpmailer/phpmailer/src/PHPMailer.php
+> git ls-files --stage -- application/vendor/phpmailer/phpmailer/src/
+> git show :application/controllers/forgot-password-recovery-mail.php
+> git ls-files --stage -- application/controllers/
+> git show :application/controllers/Manage_Accounts.php
+> git ls-files --stage -- application/controllers/
+> git show :application/controllers/forgot-password-recovery-mail.php
+> git ls-files --stage -- application/controllers/
+> git show :application/controllers/Manage_Accounts.php
+> git ls-files --stage -- application/controllers/
+> git show :application/controllers/forgot-password-recovery-mail.php
+> git ls-files --stage -- application/controllers/
+> git show :application/vendor/phpmailer/phpmailer/src/PHPMailer.php
+> git ls-files --stage -- application/vendor/phpmailer/phpmailer/src/
+> git show :application/controllers/forgot-password-recovery-mail.php
+> git ls-files --stage -- application/controllers/
+> git show :application/vendor/phpmailer/phpmailer/src/PHPMailer.php
+> git ls-files --stage -- application/vendor/phpmailer/phpmailer/src/
+> git show :application/controllers/forgot-password-recovery-mail.php
+> git ls-files --stage -- application/controllers/
+> git show :application/controllers/mail_configuration.php
+> git ls-files --stage -- application/controllers/
+> git show :application/controllers/forgot-password-recovery-mail.php
+> git ls-files --stage -- application/controllers/
+> git show :application/vendor/phpmailer/phpmailer/src/SMTP.php
+> git ls-files --stage -- application/vendor/phpmailer/phpmailer/src/
+> git show :application/controllers/forgot-password-recovery-mail.php
+> git ls-files --stage -- application/controllers/
+> git show :ng6/src/app/service/dataservice.service.ts
+> git show :application/controllers/Manage_Accounts.php
+> git ls-files --stage -- application/controllers/
+> git show :application/controllers/forgot-password-recovery-mail.php
+> git ls-files --stage -- application/controllers/
+> git show :application/vendor/phpmailer/phpmailer/src/PHPMailer.php
+> git ls-files --stage -- application/vendor/phpmailer/phpmailer/src/
+> git show :ng6/src/app/service/dataservice.service.ts
+> git show :application/vendor/phpmailer/phpmailer/src/PHPMailer.php
+> git ls-files --stage -- application/vendor/phpmailer/phpmailer/src/
+> git show :ng6/src/app/notes/notes.component.css
+> git show :application/controllers/Manage_Accounts.php
+> git ls-files --stage -- application/controllers/
+> git show :application/controllers/forgot-password-recovery-mail.php
+> git ls-files --stage -- application/controllers/
+> git show :application/vendor/phpmailer/phpmailer/src/PHPMailer.php
+> git ls-files --stage -- application/vendor/phpmailer/phpmailer/src/
+> git show :application/controllers/forgot-password-recovery-mail.php
+> git ls-files --stage -- application/controllers/
+> git show :application/controllers/Manage_Accounts.php
+> git ls-files --stage -- application/controllers/
+> git show :application/controllers/forgot-password-recovery-mail.php
+> git ls-files --stage -- application/controllers/
+> git show :application/controllers/mail_configuration.php
+> git ls-files --stage -- application/controllers/
+> git show :application/controllers/Manage_Accounts.php
+> git ls-files --stage -- application/controllers/
+> git show :application/controllers/forgot-password-recovery-mail.php
+> git ls-files --stage -- application/controllers/
+> git show :application/vendor/phpmailer/phpmailer/src/PHPMailer.php
+> git ls-files --stage -- application/vendor/phpmailer/phpmailer/src/
+> git show :application/controllers/forgot-password-recovery-mail.php
+> git ls-files --stage -- application/controllers/
+> git show :application/vendor/phpmailer/phpmailer/src/PHPMailer.php
+> git ls-files --stage -- application/vendor/phpmailer/phpmailer/src/
+> git show :application/controllers/forgot-password-recovery-mail.php
+> git ls-files --stage -- application/controllers/
+> git show :application/controllers/Manage_Accounts.php
+> git ls-files --stage -- application/controllers/
+> git show :application/controllers/forgot-password-recovery-mail.php
+> git ls-files --stage -- application/controllers/
+> git show :application/controllers/Manage_Accounts.php
+> git ls-files --stage -- application/controllers/
+> git show :application/controllers/forgot-password-recovery-mail.php
+> git ls-files --stage -- application/controllers/
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :application/vendor/phpmailer/phpmailer/src/PHPMailer.php
+> git ls-files --stage -- application/vendor/phpmailer/phpmailer/src/
+> git show :application/controllers/Manage_Accounts.php
+> git ls-files --stage -- application/controllers/
+> git show :application/controllers/forgot-password-recovery-mail.php
+> git ls-files --stage -- application/controllers/
+> git show :application/vendor/phpmailer/phpmailer/src/SMTP.php
+> git ls-files --stage -- application/vendor/phpmailer/phpmailer/src/
+> git show :application/controllers/forgot-password-recovery-mail.php
+> git ls-files --stage -- application/controllers/
+> git show :application/vendor/phpmailer/phpmailer/src/PHPMailer.php
+> git ls-files --stage -- application/vendor/phpmailer/phpmailer/src/
+> git show :application/vendor/phpmailer/phpmailer/src/SMTP.php
+> git ls-files --stage -- application/vendor/phpmailer/phpmailer/src/
+> git show :application/controllers/forgot-password-recovery-mail.php
+> git ls-files --stage -- application/controllers/
+> git show :ng6/src/app/service/dataservice.service.ts
+> git show :application/vendor/phpmailer/phpmailer/src/PHPMailer.php
+> git ls-files --stage -- application/vendor/phpmailer/phpmailer/src/
+> git show :application/controllers/Manage_Accounts.php
+> git ls-files --stage -- application/controllers/
+> git show :application/controllers/mail_configuration.php
+> git ls-files --stage -- application/controllers/
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :application/vendor/phpmailer/phpmailer/src/PHPMailer.php
+> git ls-files --stage -- application/vendor/phpmailer/phpmailer/src/
+> git show :application/controllers/mail_configuration.php
+> git ls-files --stage -- application/controllers/
+> git show :application/controllers/Manage_Accounts.php
+> git ls-files --stage -- application/controllers/
+> git show :application/controllers/mail_configuration.php
+> git ls-files --stage -- application/controllers/
+> git show :application/controllers/Manage_Accounts.php
+> git ls-files --stage -- application/controllers/
+> git show :application/controllers/forgot-password-recovery-mail.php
+> git ls-files --stage -- application/controllers/
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :ng6/src/app/service/dataservice.service.ts
+> git show :ng6/src/app/notes/notes.component.ts
+> git show :application/controllers/Manage_Accounts.php
+> git ls-files --stage -- application/controllers/
+> git show :application/controllers/forgot-password-recovery-mail.php
+> git ls-files --stage -- application/controllers/
+> git show :ng6/src/app/service/dataservice.service.ts
+> git show :ng6/src/app/notes/notes.component.css
+> git show :application/controllers/forgot-password-recovery-mail.php
+> git ls-files --stage -- application/controllers/
+> git show :application/controllers/Manage_Accounts.php
+> git ls-files --stage -- application/controllers/
+> git show :ng6/src/app/service/dataservice.service.ts
+> git show :ng6/src/app/notes/notes.component.ts
+> git show :application/controllers/mail_configuration.php
+> git ls-files --stage -- application/controllers/
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :application/controllers/forgot-password-recovery-mail.php
+> git ls-files --stage -- application/controllers/
+> git show :ng6/src/app/service/dataservice.service.ts
+> git show :application/controllers/Manage_Accounts.php
+> git ls-files --stage -- application/controllers/
+> git show :application/controllers/mail_configuration.php
+> git ls-files --stage -- application/controllers/
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose

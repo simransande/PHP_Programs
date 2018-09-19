@@ -23,6 +23,8 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { ForgotPasswordComponent } from './ForgotPassword/ForgotPassword.component';
 import { NotesComponent } from './notes/notes.component';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+
 
 
 
@@ -58,7 +60,8 @@ import { NotesComponent } from './notes/notes.component';
     HttpClientModule,
     MatToolbarModule,
     MatIconModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatSnackBarModule
   
   ],
   providers: [DataserviceService,HttpClientModule],

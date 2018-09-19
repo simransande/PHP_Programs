@@ -2,6 +2,18 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders} from '@angular/common/http';
 import { Observable } from 'rxjs';
 
+import { from } from 'rxjs';
+//  import { map, filter, scan } from 'rxjs/operators';
+import { map, filter, catchError, mergeMap } from 'rxjs/operators';
+// import { Pipe, PipeTransform } from '@angular/core';
+
+
+// import { log } from 'util';
+// import { catchError } from 'rxjs/operators';
+import { text } from '@angular/core/src/render3/instructions';
+import { pipe } from '@angular/core/src/render3/pipe';
+
+
 // import { servicesusrls } from '../constant/constants.services';
 //import { servicesusrls } from '../constant/constant.module';
 @Injectable({
@@ -79,17 +91,36 @@ private _contactUrl2='http://localhost:8080/forgotpassword';
 
 
      Login(value: any): Observable<{}> {
-     //  debugger;
-       let body1 = new FormData();
-       body1.append('email', value.data[0].email);
-       body1.append('password', value.data[0].password);
+      debugger;
+      //  let body1 = new FormData();
+      //  body1.append('email', value.data[0].email);
+      //  body1.append('password', value.data[0].password);
+
+      let body1 = new FormData();
+      body1.append('email',value.email);
+      body1.append('password', value.password);
        let otheroption: any = {
          'Content-Type': 'application/x-www-form-urlencoded'
        }
-     return this.http.post(this._contactUrl1, body1, otheroption);//.subscribe(data => {
-       //alert(data);
-       //});
+      //  return this.http
+      //  .post(this._contactUrl1, body1, otheroption)
+      //  .ma  p(response => {
+      //      const chamados = response.json();
+      //      // return chamados.map((chamado) => new Chamado(chamado));
+
+      //  })
+      //  .catch(this.handleError);
+
+       return this.http.post(this._contactUrl1, body1, otheroption).pipe(
+        map((res: Response) => res)
+      );
+
+     //return this.http.post(this._contactUrl1, body1, otheroption).pipe(map((res:Response)=>res));
+
      }
+
+
+
      ForgotPass(value: any): Observable<{}> {
      // debugger;
       let body2 = new FormData();

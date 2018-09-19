@@ -30,19 +30,19 @@ export class ForgotPasswordComponent implements OnInit {
     ];
     this.service.ForgotPass({ data })
       .subscribe(
-        response => this.handleResponse(response),
-        error => this.handleResponse(error)
+        response => this.handleResponse(response)
+      //  error => this.handleResponse(error)
       );
   }
 
   handleResponse(response) {
-    if (response.success) {
-     // console.log("success");
-    } else if (response.error) {
-      //console.log("errror");
-    } else {
+    // if (response.success) {
+    //  // console.log("success");
+    // } else if (response.error) {
+    //   //console.log("errror");
+    // } else {
 
-    }
+    // }
 
   }
 

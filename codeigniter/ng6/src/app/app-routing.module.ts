@@ -19,10 +19,7 @@ import { NotesComponent } from './notes/notes.component';
       { path: 'registration', component: RegistrationComponent },
       { path: 'login', component: LoginComponent },
       { path: 'ForgotPassword', component: ForgotPasswordComponent },
-      { path: 'fundoo-notes', component: FundooNotesComponent , children:[
-        { path: '', component: NotesComponent }
-
-      ]}
+      { path: 'fundoo-notes', component: FundooNotesComponent }
     
 
 
