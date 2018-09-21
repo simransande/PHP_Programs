@@ -10,7 +10,7 @@
   }
   .note-card {
     width: 550px;
-    margin-top: 90px;
+    margin-top: 80px;
     margin-left: 320px;
      padding: 10px;
      padding-right: 20px;
@@ -32,7 +32,8 @@
     border: none;
     outline: none;
     width: 500px;
-    style:bold;
+    font-weight:bold;
+    font-size: large;
   }
   .note-pin{
     margin-right: 10px;
@@ -130,7 +131,21 @@
   height: 18px;
   width: 18px;
 }
-.close{
+.closebtn{
   margin-left: 70px;
 }
+.note-button{
+  width: 200px;
+  height: 52px;
+  margin-left: -21px;
 
+    }
+.image-notes{
+  opacity: 0.5;
+   margin-left: -232px;
+   padding-left: 100px;
+}
+.note{
+  size: small;
+  padding-left: 130px;
+}

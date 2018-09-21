@@ -1,5 +1,5 @@
 <?php
-define("PROJECT_HOME", "http://localhost:4200/login");
+define("PROJECT_HOME", "http://localhost:4200/resetpassword");
 
 define("PORT", "587"); // port number
 define("MAIL_USERNAME", "simransande.a@gmail.com"); // smtp usernmae

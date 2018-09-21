@@ -70,3 +70,34 @@ fatal: No upstream configured for branch 'master'
 > git show :ng6/src/app/service/dataservice.service.ts
 > git show :application/controllers/Manage_Accounts.php
 > git ls-files --stage -- application/controllers/
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :ng6/src/app/registration/registration.component.ts
+> git show :application/controllers/Manage_Accounts.php
+> git ls-files --stage -- application/controllers/
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: No upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose

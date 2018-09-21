@@ -23,4 +23,8 @@
     margin-top:10px;
     margin-bottom: 10px;
   }
-
+.UserError{
+  /* margin-top:10px; */
+  color:red;
+  font-size: small;
+}

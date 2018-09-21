@@ -37,43 +37,29 @@ export class RegistrationComponent implements OnInit {
     Validators.pattern("[0-9]{10}")
   ]);
 
-//onClickMe(){
-//this.service.Register(this.model)
-// .subscribe(res => {
-//   console.log("Demo", res);
-// });
-//console.log("gfrhynfrtyhnfrhgbyr");
-//debugger;
-  //}
-  onClickMe() {
-    //debugger;
+  s_register() {
+   //debugger;
     this.model;
 
-
-    //let user = new User('', '');
-    //user.username = "prashant";
-    //user.password = "asdfasfa";
     let data = [
       { 'username': this.model.uname, 'password': this.model.pass, 'email': this.model.email, 'phone': this.model.phone }
     ];
     this.service.Register({ data })
       .subscribe(
-        response => this.handleResponse(response),
+       // response => this.handleResponse(response),
         error => this.handleResponse(error)
       );
   }
  
-  handleResponse(response) {
-   // debugger;
-    if (response.success) {
-      //console.log("success");
-    } else if (response.error) {
-     // console.log("errror");
-    } else {
+   handleResponse(response) {
+    // debugger;
+     if (response.success) {
+       console.log("success");
+     } else if (response.error) {
+       console.log("errror");
+     } 
 
-    }
-
-  }
+   }
 
 
 }

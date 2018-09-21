@@ -1,0 +1,28 @@
+[2018-09-20 10:01:58.089] [exthost1] [info] extension host started
+[2018-09-20 10:01:58.158] [exthost1] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"activationEvent":"*"}
+[2018-09-20 10:01:58.159] [exthost1] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/debug-auto-launch/out/extension
+[2018-09-20 10:01:58.778] [exthost1] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"activationEvent":"*"}
+[2018-09-20 10:01:58.778] [exthost1] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/emmet/dist/extension
+[2018-09-20 10:01:58.955] [exthost1] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"activationEvent":"*"}
+[2018-09-20 10:01:58.955] [exthost1] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/git/dist/main
+[2018-09-20 10:02:00.921] [exthost1] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"activationEvent":"*"}
+[2018-09-20 10:02:00.921] [exthost1] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/merge-conflict/out/extension
+[2018-09-20 10:02:01.331] [exthost1] [info] ExtensionService#_doActivateExtension vscode.search-rg {"startup":true,"activationEvent":"*"}
+[2018-09-20 10:02:01.331] [exthost1] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/search-rg/out/extension
+[2018-09-20 10:02:01.615] [exthost1] [info] eager extensions activated
+[2018-09-20 10:02:01.616] [exthost1] [info] ExtensionService#_doActivateExtension vscode.php-language-features {"startup":false,"activationEvent":"onLanguage:php"}
+[2018-09-20 10:02:01.616] [exthost1] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/php-language-features/out/phpMain
+[2018-09-20 10:02:01.785] [exthost1] [info] ExtensionService#_doActivateExtension kokororin.vscode-phpfmt {"startup":false,"activationEvent":"onLanguage:php"}
+[2018-09-20 10:02:01.785] [exthost1] [info] ExtensionService#loadCommonJSModule /home/bridgelabz/.vscode/extensions/kokororin.vscode-phpfmt-1.0.30/out/src/extension
+[2018-09-20 10:02:44.163] [exthost1] [info] ExtensionService#_doActivateExtension vscode.html-language-features {"startup":false,"activationEvent":"onLanguage:html"}
+[2018-09-20 10:02:44.163] [exthost1] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/html-language-features/client/dist/htmlMain
+[2018-09-20 10:05:19.685] [exthost1] [info] ExtensionService#_doActivateExtension vscode.extension-editing {"startup":false,"activationEvent":"onLanguage:typescript"}
+[2018-09-20 10:05:19.685] [exthost1] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/extension-editing/out/extension
+[2018-09-20 10:05:19.756] [exthost1] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features {"startup":false,"activationEvent":"onLanguage:typescript"}
+[2018-09-20 10:05:19.756] [exthost1] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/typescript-language-features/dist/extension
+[2018-09-20 10:05:44.388] [exthost1] [info] ExtensionService#_doActivateExtension vscode.configuration-editing {"startup":false,"activationEvent":"onLanguage:jsonc"}
+[2018-09-20 10:05:44.388] [exthost1] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/configuration-editing/out/extension
+[2018-09-20 10:05:44.449] [exthost1] [info] ExtensionService#_doActivateExtension vscode.json-language-features {"startup":false,"activationEvent":"onLanguage:jsonc"}
+[2018-09-20 10:05:44.449] [exthost1] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/json-language-features/client/dist/jsonMain
+[2018-09-20 10:21:22.682] [exthost1] [info] ExtensionService#_doActivateExtension vscode.css-language-features {"startup":false,"activationEvent":"onLanguage:css"}
+[2018-09-20 10:21:22.682] [exthost1] [info] ExtensionService#loadCommonJSModule /usr/share/code/resources/app/extensions/css-language-features/client/dist/cssMain

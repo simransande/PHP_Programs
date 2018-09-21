@@ -9,35 +9,49 @@
       <mat-card class="note-card1" *ngIf="createCard">
           <mat-card-content>
 
-        <div class="pin1"><input class="noteinput1" placeholder="Title"/> 
-        <button mat-icon-button class="note-pin">
+        <div class="pin1"><input class="noteinput1" placeholder="Title"[(ngModel)]="model.title"/> 
+        <button mat-icon-button class="note-pin" matTooltip="Pin Note">
           <img class="pin" src="../../assets/pin.svg">
         </button>
       </div>
-        <input class="noteContain" placeholder="Take a note..."/>
+        <input class="noteContain" placeholder="Take a note..."[(ngModel)]="model.descriptin"/>
         <div class="menu">
-            <button mat-icon-button class="note-reminder">
+            <button mat-icon-button class="note-reminder" matTooltip="Remind Me" [matMenuTriggerFor]="menu">
                 <img class="reminder" src="../../assets/reminder.svg">
             </button>
+            <mat-menu #menu="matMenu">Reminder:
+                <button mat-menu-item>later today</button>
+                <button mat-menu-item>Tommorow</button>
+                <button mat-menu-item>Next week</button>
+                <button mat-button class="note-button">
+                    <img src="../../assets/outline-watch_later-24px.svg" class="image-notes">
+                    <span class="note">select date and time</span>
+                  </button>
+
+                  <button mat-button class="note-button">
+                    <img src="../../assets/outline-watch_later-24px.svg" class="image-notes">
+                    <span class="note">select place</span>
+                  </button>
+              </mat-menu>
        
 
-          <button mat-icon-button class="note-collaborator">
+          <button mat-icon-button class="note-collaborator" matTooltip="collaborator">
               <img class="collaborator" src="../../assets/baseline-person_add-24px.svg">
           </button>
 
-          <button mat-icon-button class="note-color">
+          <button mat-icon-button class="note-color" matTooltip="Change colour">
               <img class="color" src="../../assets/baseline-color_lens-24px.svg">
           </button>
 
-          <button mat-icon-button class="note-addPerson">
-              <img class="addPerson" src="../../assets/baseline-person_add-24px.svg">
+          <button mat-icon-button class="note-addPerson" matTooltip="Add image">
+              <img class="addPerson" src="../../assets/addimage.svg">
           </button>
 
-          <button mat-icon-button class="note-archive">
+          <button mat-icon-button class="note-archive" matTooltip="Archive">
               <img class="archive" src="../../assets/archive.svg">
           </button>
 
-          <button mat-icon-button class="note-menuBotton">
+          <button mat-icon-button class="note-menuBotton" matTooltip="More">
               <img class="menuBotton" src="../../assets/baseline-more_vert-24px.svg">
           </button>
           
@@ -49,7 +63,7 @@
             <img class="redo" src="../../assets/baseline-redo-24px.svg">
           </button>
 
-          <button mat-button class="close" (click)="showHideImp()">CLOSE</button>
+          <button mat-button class="closebtn" (click)="showHideImp()">CLOSE</button>
 
         
 
@@ -57,14 +71,8 @@
         </mat-card-content>
 
       </mat-card>
-      </mat-sidenav-content>
-      </mat-sidenav-container>
+   </mat-sidenav-content>
+</mat-sidenav-container>
 
 
-  
-          <!-- <button mat-button class="closebtn" (click)="showHideImp()" >CLOSE</button>
-        </div>
-      </mat-card>
-  
-    </mat-sidenav-content>
-  </mat-sidenav-container>  -->
+ 

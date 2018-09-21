@@ -1,4 +1,4 @@
-<p>
+
   <mat-card class='login'>
       <mat-card-title align="center">
           <h2>Sign in</h2>
@@ -24,16 +24,11 @@
 
        <a href="/ForgotPassword" >Forgot Password?</a>  <!--to link the other site -->
   </div>
-  <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
   
-  
-  
-     <button  class="login1-full-width" mat-button color type="submit" (click)="onClickMe1()">SIGN IN </button> 
-     <!-- <script>
-      function onClickMe1() {
-          alert("I am an alert box!");
-      }
-      </script> -->
+     <button  class="login1-full-width" mat-button color type="submit" (click)="s_login()">SIGN IN </button> 
+     <div *ngIf="Error" class="UserError">
+      User entered wrong email or password
+    </div>
     <div align="center">
  <h4>or Sign in with:</h4>
  <img src="../../assets/icons8-facebook.svg">
@@ -53,4 +48,4 @@
 
         </mat-card-content>
   </mat-card> 
-</p>
+

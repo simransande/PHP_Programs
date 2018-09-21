@@ -17,7 +17,7 @@ export class ForgotPasswordComponent implements OnInit {
   emailFormControl=new FormControl('',[
     Validators.required
   ]);
-  onClickMe2() {
+  s_forgotpass() {
     //debugger;
     this.model;
 

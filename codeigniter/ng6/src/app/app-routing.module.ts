@@ -3,9 +3,11 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import{RegistrationComponent} from './registration/registration.component';
 import { LoginComponent} from './login/login.component';
-import { FundooNotesComponent } from './fundoo-notes/fundoo-notes.component';
+import { FundooNotesComponent } from './FundooNotes/FundooNotes.component';
 import { ForgotPasswordComponent } from './ForgotPassword/ForgotPassword.component';
 import { NotesComponent } from './notes/notes.component';
+import { ResetpasswordComponent } from './resetpassword/resetpassword.component';
+
 
 
 
@@ -19,11 +21,12 @@ import { NotesComponent } from './notes/notes.component';
       { path: 'registration', component: RegistrationComponent },
       { path: 'login', component: LoginComponent },
       { path: 'ForgotPassword', component: ForgotPasswordComponent },
-      { path: 'fundoo-notes', component: FundooNotesComponent }
+      { path: 'resetpassword', component: ResetpasswordComponent },
+      { path: 'FundooNotes', component: FundooNotesComponent, children:[
+        {path: '',component:NotesComponent}
+      ]
+     }
     
-
-
-
     ])
   ],
   exports: [ RouterModule ],

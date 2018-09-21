@@ -17,13 +17,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { LoginComponent } from './login/login.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { DataserviceService } from './service/dataservice.service';
-import { FundooNotesComponent } from './fundoo-notes/fundoo-notes.component';
+import { FundooNotesComponent } from './FundooNotes/FundooNotes.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { ForgotPasswordComponent } from './ForgotPassword/ForgotPassword.component';
 import { NotesComponent } from './notes/notes.component';
-import {MatSnackBarModule} from '@angular/material/snack-bar';
+// import {MatSnackBarModule} from '@angular/material/snack-bar';
+import {MatTooltipModule} from '@angular/material/tooltip';
+import { ResetpasswordComponent } from './resetpassword/resetpassword.component';
+import {MatMenuModule} from '@angular/material/menu';
 
 
 
@@ -40,7 +43,8 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     RegistrationComponent,
     FundooNotesComponent,
     ForgotPasswordComponent,
-    NotesComponent
+    NotesComponent,
+    ResetpasswordComponent
     
     
   ],
@@ -61,7 +65,8 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     MatToolbarModule,
     MatIconModule,
     MatSidenavModule,
-    MatSnackBarModule
+    MatTooltipModule,
+    MatMenuModule
   
   ],
   providers: [DataserviceService,HttpClientModule],
