@@ -476,5 +476,25 @@
             "file:///var/www/html/OOP"
         ],
         "files2": []
+    },
+    "windowsState": {
+        "openedWindows": [],
+        "lastActiveWindow": {
+            "folderUri": {
+                "$mid": 1,
+                "fsPath": "/var/www/html/codeigniter",
+                "external": "file:///var/www/html/codeigniter",
+                "path": "/var/www/html/codeigniter",
+                "scheme": "file"
+            },
+            "backupPath": "/var/www/html/codeigniter/~/.vscode-root/Backups/61241a9750c12d55dffa6b07394bd19d",
+            "uiState": {
+                "mode": 0,
+                "x": 59,
+                "y": 24,
+                "width": 1307,
+                "height": 744
+            }
+        }
     }
 }

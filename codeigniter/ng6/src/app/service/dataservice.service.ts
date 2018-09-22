@@ -18,15 +18,14 @@ private _contactUrl1='http://localhost:8080/html/codeigniter/login';
 // private _contactUrl1='http://localhost:8080/login';
 private _contactUrl2='http://localhost:8080/html/codeigniter/forgotpassword';
 private _contactUrl3='http://localhost:8080/html/codeigniter/resetpassword';
+// private _contactUrl4='http://localhost:8080/html/codeigniter/notes';
+// private _contactUrl4='http://localhost:8080/html/notes';
 private _contactUrl4='http://localhost:8080/html/codeigniter/notes';
 
 
-   
   constructor(private http: HttpClient) {
 
    }
-
-
     Register(value: any): Observable<{}>
     {
      // debugger;
@@ -84,14 +83,21 @@ private _contactUrl4='http://localhost:8080/html/codeigniter/notes';
      return this.http.post(this._contactUrl3, reset, otheroption);
      }
 
+    //  Notes(value: any,archive:number,): Observable<{}> {
      Notes(value: any): Observable<{}> {
-      // debugger;
+      //debugger;
        let note = new FormData();
        let email=localStorage.getItem('email');
        note.append('title', value.data[0].title);
        note.append('description', value.data[0].description);
        note.append('email', email);
-
+      //   note.append('reminder',null);
+      //   note.append('pin', null);
+      //  // note.append('archive', archive);
+      //  note.append('trash',null);
+      //  note.append('colorcode', null);
+      //   note.append('image', null);
+      
        let otheroption: any = {
          'Content-Type': 'application/x-www-form-urlencoded'
        }

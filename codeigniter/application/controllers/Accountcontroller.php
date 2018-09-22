@@ -4,18 +4,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Accountcontroller extends CI_Controller
 {
-//     public function __construct(){
-//         parent::__construct();
 
-//         $this->load->model('responseModel'); //Load the Model here   
-
-// }
     public function index() 
     {
     }
    
-    //regester a new user with name,email,password and phone number
-
+    
+     // function regestercreate a new user with name,email,password and phone number
+     
     public function register()
     {
         /**
@@ -49,7 +45,8 @@ class Accountcontroller extends CI_Controller
    
         else
         {
-       $conn=new mysqli("localhost","root","root","fundooNotes");//($servername, $username, $password, $dbname)
+        //($servername, $username, $password, $dbname)
+       $conn=new mysqli("localhost","root","root","fundooNotes");
        if ($conn->connect_error) 
        {
 
@@ -57,6 +54,7 @@ class Accountcontroller extends CI_Controller
           
        }
         
+    // select query to select that perticular row
        $duplicate="SELECT * From user where email='$mail' and uname='$name'";
        
        $result=mysqli_query($conn, $duplicate);
@@ -71,33 +69,30 @@ class Accountcontroller extends CI_Controller
          echo $sql;
          if (mysqli_query($conn, $sql))
             {
-           // echo "New record created successfully";
+            echo "New record created successfully";
             
              }
             else 
             {
-           // echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+            echo "Error: " . $sql . "<br>" . mysqli_error($conn);
             }
         
         }
         }
     }
 
-    //login the user using email id and password
 
+    // login the user using email id and password
+     
     public function login()
     {     
-     //  $res=new Response_model();
-        // $res=new responseModel();
-       // $this->load->model('Response_model'); //Load the Model here   
         $flag=0;
-
-            /**
-         * @Assert\Email(
-         *     message = "The email '{{ value }}' is not a valid email.",
-         *     checkMX = true
-         * )
-         */
+        /**
+        * @Assert\Email(
+        *     message = "The email '{{ value }}' is not a valid email.",
+        *     checkMX = true
+        * )
+        */
         $mail=$_POST['email'];
 
         /**
@@ -107,29 +102,29 @@ class Accountcontroller extends CI_Controller
         */
         $pass=$_POST['password'];
    
-        $conn=new mysqli("localhost","root","root","fundooNotes");//($servername, $username, $password, $dbname)
+        
+        // ($servername, $username, $password, $dbname)
+        
+        $conn=new mysqli("localhost","root","root","fundooNotes");
         if ($conn->connect_error) {
 
             die("Connection failed: " . $conn->connect_error);
         }   
+        // select query to select that perticular row
          $sql = "SELECT * From user where email='$mail' and password='$pass'";
     
         $result = mysqli_query($conn, $sql);
 
-        // $row = mysqli_fetch_assoc($result);
-        //  //$fetch_user_id=$row['email'];
-        //  $email_id=$row['email'];
-
+        //if the number of rows greater or equal to 1
         if ($result->num_rows>=1) 
         {  
             $mail=$_POST['email'];              
             $flag++;            
-            $myjson='{"email":'.'"'.$mail.'","status":'.$flag."}"  ;           
+            $myjson='{"email":'.'"'.$mail.'","status":'.$flag."}";           
             print $myjson;  
         } 
         else
         {
-            //echo "Error: " . $sql . "<br>" . mysqli_error($conn);
             $flag--;
             print  $flag;
         }
@@ -137,8 +132,9 @@ class Accountcontroller extends CI_Controller
     }
 
 
-    //if user forget password then with using mail id it will recover the password
-
+    
+    // if user forget password then with using mail id it will recover the password
+     
     public function forgotpassword()
     {
 
@@ -146,7 +142,6 @@ class Accountcontroller extends CI_Controller
         header('Access-Control-Allow-Headers: X-Requested-With');
         header('Access-Control-Allow-Methods: POST, GET, OPTIONS');
 
-        // echo 'id' . $this->post('username');
 
         if (!empty($_POST["email"])) 
         {
@@ -158,24 +153,29 @@ class Accountcontroller extends CI_Controller
            * )
            */
             $email = $_POST["email"];
-            $conn = mysqli_connect("localhost", "root", "root", "fundooNotes");//($servername, $username, $password, $dbname)
+            //($servername, $username, $password, $dbname)
+
+            $conn = mysqli_connect("localhost", "root", "root", "fundooNotes");
             $sql = "Select * from user where email='$email'";
             $result = mysqli_query($conn, $sql);
             $user = mysqli_fetch_array($result);
+
             if (!empty($user)) 
             {
                 require_once("forgot-password-recovery-mail.php");
-            } else {
+            } else
+            {
                 $error_message = 'No User Found';
             }
         }
     
     }
 
+
+    //reset a password using mail and password
+
     public function resetpassword()
     {     
-      
-    
         $mail=$_POST['email'];
         $pass=$_POST['password'];
 
@@ -203,27 +203,14 @@ class Accountcontroller extends CI_Controller
         
     }
 
-   public function notes()
-   {
-        /**
-        * @var string
-        * @label('title')
-        */
-        $title=$_POST['title'];
 
-        /**
-         * @var string
-         *@range(0,10000)
-         *@label('description')
-         */
+        //creating a note
+    public function notes()
+    {
+        $title=$_POST['title'];
+        $mail=$_POST['email'];           
         $des=$_POST['description'];
  
-        //   /**
-        //  * @var integer
-        //  *@label('phone number')
-        //  */
-        // $phone=$_POST['phone'];
-        
         $conn=new mysqli("localhost","root","root","fundooNotes");//($servername, $username, $password, $dbname)
         if ($conn->connect_error) 
         {
@@ -231,20 +218,23 @@ class Accountcontroller extends CI_Controller
             die("Connection failed: " . $conn->connect_error);
            
         }
-         
-          $sql = "INSERT INTO note (title,description) VALUES('$title','$des')";
+       // $sql = "INSERT INTO user(uname,email,password,phone) VALUES('$name','$mail','$pass',$phone)";
+
+          $sql = "INSERT INTO note (title,description,email) VALUES('$title','$des','$mail')";
+        //  $sql = "INSERT INTO note (title,description,email,reminder,pin,archive,trash,colorcode,image) VALUES('$title','$des','$mail','$reminder','$pin','$archive','$trash','$colorcode','$image')";
+
           echo $sql;
         //  $result=mysqli_query($conn, $sql);
           $result = mysqli_query($conn, $sql);
           if($result->num_rows>=1)
              {
-                $title=$_POST['title'];
-                $des=$_POST['description'];
+                // $title=$_POST['title'];
+                // $des=$_POST['description'];
 
-                $mail=$_POST['email'];              
-                $flag++;            
-                $myjson='{"title":'.'"'.$title.'","description":'.$des."}"  ;           
-                print $myjson;  
+                // $mail=$_POST['email'];              
+                // $flag++;            
+                // $json='{"title":'.'"'.$title.'","description":'.$des."}"  ;           
+                // print $json;  
                  //$flag++;
             // echo "New record created successfully";
              
@@ -256,7 +246,46 @@ class Accountcontroller extends CI_Controller
              }
             // }
          }
-        // }
+
+
+    public function getnotes()
+    {
+            $title=$_POST['title'];
+            $mail=$_POST['email'];              
+        
+            $des=$_POST['description'];
+
+            $conn=new mysqli("localhost","root","root","fundooNotes");//($servername, $username, $password, $dbname)
+        if ($conn->connect_error) 
+        {
+ 
+            die("Connection failed: " . $conn->connect_error);
+           
+        }
+        $sql = "SELECT * From note where email='$mail'";
+    
+        $result = mysqli_query($conn, $sql);
+
+        // $row = mysqli_fetch_assoc($result);
+        //  //$fetch_user_id=$row['email'];
+        //  $email_id=$row['email'];
+
+        if ($result->num_rows>=1) 
+        {  
+            $mail=$_POST['email']; 
+            $title=$_POST['title'];
+            $des=$_POST['description'];
+                       
+            $getjson='{"email":'.'"'.$mail.'","title":'.$title.'""description":'.'"'.$des."}";           
+            print $myjson;  
+        } 
+        else
+        {
+            //echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+           
+            print  $getjson;
+        }
+    }
          
      
  

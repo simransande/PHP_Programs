@@ -61,3 +61,6 @@ $route['login'] = 'Accountcontroller/login';
 $route['register'] = 'Accountcontroller/register';
 $route['forgotpassword'] = 'Accountcontroller/forgotpassword';
 $route['resetpassword'] = 'Accountcontroller/resetpassword';
+$route['notes'] = 'Accountcontroller/notes';
+
+

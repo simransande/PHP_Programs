@@ -1,13 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 import { DataserviceService } from '../service/dataservice.service';
-
 import { Router } from '@angular/router';
 import { RouterModule, Routes} from '@angular/router';
 import {MatSnackBar} from '@angular/material';
-
-
-
 
 @Component({
   selector: 'app-login',
@@ -46,35 +42,23 @@ export class LoginComponent implements OnInit {
 
     this.service.Login(data).subscribe((Statusdata: any) => {      
     //debugger;
-      console.log(Statusdata);
-     // console.log(data.user1);
-     this.flag=Statusdata.status;
-      this.mail=Statusdata.email;
-   //  debugger;
+    console.log(Statusdata);
+    this.flag=Statusdata.status;
+    this.mail=Statusdata.email;
+   
 
-      if (this.flag == 1) {
-       // this.Error = true;
-       //this.Email = this.userData.email;
+      if (this.flag == 1) 
+      {
         localStorage.setItem('email', this.mail);
         this.router.navigate(['/FundooNotes']);
-        
       }
-      else{
-        //debugger;
-        // this.notes.getEmail(this.userData.email);
-         //this.router.navigate(['/FundooNotes']);
-         this.Error = true;
+      else
+      {
+       this.Error = true;
       }
     });
 
   }
-  // handleResponse(response) {
-  //   if (response.success) {
-  //     console.log("success");
-  //   } else if (response.error) {
-  //     console.log("errror");
-  //   } 
-
   }
 
 

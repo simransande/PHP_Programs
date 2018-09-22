@@ -7,7 +7,7 @@ if (!class_exists('PHPMailer')) {
 require_once "mail_configuration.php";
 $mail = new PHPMailer();
 
-$emailBody = "<div>" . $user["email"] . ",<br><br><p>Click this link to recover your password<br><a href='" . PROJECT_HOME ;
+$emailBody = "<div>" . $user["email"] . ",<br><br><p>Click this link to recover your password<br><a href=" . PROJECT_HOME ;
 
 $mail->IsSMTP();
 $mail->SMTPDebug = 0;

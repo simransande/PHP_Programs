@@ -44,22 +44,22 @@ export class RegistrationComponent implements OnInit {
     let data = [
       { 'username': this.model.uname, 'password': this.model.pass, 'email': this.model.email, 'phone': this.model.phone }
     ];
-    this.service.Register({ data })
+    this.service.Register({data})
       .subscribe(
-       // response => this.handleResponse(response),
+        response => this.handleResponse(response),
         error => this.handleResponse(error)
       );
   }
  
    handleResponse(response) {
-    // debugger;
-     if (response.success) {
-       console.log("success");
-     } else if (response.error) {
-       console.log("errror");
+  //   // debugger;
+      if (response.success) {
+      // console.log("success");
+      } else if (response.error) {
+     //   console.log("errror");
      } 
 
-   }
+    }
 
 
 }
